@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "A:\\Necro's Files\\Desktop\\Github repos\\DAW-PRO\\Ejercicios Extra\\Ejer10\\Ejer10.csproj": {}
+    "M:\\Desktop\\Projects\\DAW-PRO\\Ejercicios Extra\\Ejer10\\Ejer10.csproj": {}
   },
   "projects": {
-    "A:\\Necro's Files\\Desktop\\Github repos\\DAW-PRO\\Ejercicios Extra\\Ejer10\\Ejer10.csproj": {
+    "M:\\Desktop\\Projects\\DAW-PRO\\Ejercicios Extra\\Ejer10\\Ejer10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Necro's Files\\Desktop\\Github repos\\DAW-PRO\\Ejercicios Extra\\Ejer10\\Ejer10.csproj",
+        "projectUniqueName": "M:\\Desktop\\Projects\\DAW-PRO\\Ejercicios Extra\\Ejer10\\Ejer10.csproj",
         "projectName": "Ejer10",
-        "projectPath": "A:\\Necro's Files\\Desktop\\Github repos\\DAW-PRO\\Ejercicios Extra\\Ejer10\\Ejer10.csproj",
-        "packagesPath": "C:\\Users\\Necro\\.nuget\\packages\\",
-        "outputPath": "A:\\Necro's Files\\Desktop\\Github repos\\DAW-PRO\\Ejercicios Extra\\Ejer10\\obj\\",
+        "projectPath": "M:\\Desktop\\Projects\\DAW-PRO\\Ejercicios Extra\\Ejer10\\Ejer10.csproj",
+        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+        "outputPath": "M:\\Desktop\\Projects\\DAW-PRO\\Ejercicios Extra\\Ejer10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Necro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

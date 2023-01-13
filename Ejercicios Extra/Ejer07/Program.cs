@@ -5,10 +5,10 @@ internal class Program
     private static void Main(string[] args)
     {
         string[,] product;
-        int reducedProducts = 3, amountOfProducts;
+        const int AMOUNTREDUCEDPROD = 3;
+        int amountOfProducts;
         bool check = false;
-
-        Console.Write("Bienvenido a Mercados Sonia!\n");
+        Console.Write("Bienvenido a Mercadono!\n");
 
         do
         {
@@ -32,7 +32,7 @@ internal class Program
         decimal check0;
         //int i = 0, j = 0;
 
-        //Columna 1, nombres de producto; columna 2, precio de producto
+        //Fila 1, nombres de producto; fila 2, precio de producto
         for (int i = 0; i < amountOfProducts; i++)
         {
             Console.Write($"Introduce el nombre del producto [{i + 1}]: ");
@@ -50,17 +50,9 @@ internal class Program
                 }
             } while (!check);
 
-            Console.WriteLine($"Nombre prod 1: {product[0, i]}       Precio prod 1: {product[1,i]}"); 
+            Console.WriteLine($"Nombre prod {i}: {product[0, i]}       Precio prod {i}: {product[1,i]}"); 
         }
 
-        //do
-        //{
-        //    Console.WriteLine($"Introduce el nombre del producto {cont + 1}");
-        //    product[i, j] = Console.ReadLine();
-
-        //    
-        //    Console.WriteLine(product[i, j]);
-        //} while (cont > amountOfProducts);
 
     }
 }
