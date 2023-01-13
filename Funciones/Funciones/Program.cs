@@ -25,7 +25,8 @@
             do
             {
                 if (decimal.TryParse(Console.ReadLine(), out returnedDecimal))
-                    check = true;                
+                    check = true;
+                else Console.WriteLine("Valor no válido. Valor esperado: DECIMAL");
             } while (!check);
 
             return returnedDecimal;
