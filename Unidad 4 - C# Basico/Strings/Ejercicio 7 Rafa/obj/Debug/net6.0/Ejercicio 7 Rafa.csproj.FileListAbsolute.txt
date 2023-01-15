@@ -1,0 +1,15 @@
+M:\Desktop\Strings\Ejercicio 7 Rafa\bin\Debug\net6.0\Ejercicio 7 Rafa.exe
+M:\Desktop\Strings\Ejercicio 7 Rafa\bin\Debug\net6.0\Ejercicio 7 Rafa.deps.json
+M:\Desktop\Strings\Ejercicio 7 Rafa\bin\Debug\net6.0\Ejercicio 7 Rafa.runtimeconfig.json
+M:\Desktop\Strings\Ejercicio 7 Rafa\bin\Debug\net6.0\Ejercicio 7 Rafa.dll
+M:\Desktop\Strings\Ejercicio 7 Rafa\bin\Debug\net6.0\Ejercicio 7 Rafa.pdb
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\Ejercicio 7 Rafa.csproj.AssemblyReference.cache
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\Ejercicio 7 Rafa.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\Ejercicio 7 Rafa.AssemblyInfoInputs.cache
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\Ejercicio 7 Rafa.AssemblyInfo.cs
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\Ejercicio 7 Rafa.csproj.CoreCompileInputs.cache
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\Ejercicio 7 Rafa.dll
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\refint\Ejercicio 7 Rafa.dll
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\Ejercicio 7 Rafa.pdb
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\Ejercicio 7 Rafa.genruntimeconfig.cache
+M:\Desktop\Strings\Ejercicio 7 Rafa\obj\Debug\net6.0\ref\Ejercicio 7 Rafa.dll

@@ -1,0 +1,5 @@
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Juan\obj\Debug\net6.0\IntercambioAyB.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Juan\obj\Debug\net6.0\IntercambioAyB.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Juan\obj\Debug\net6.0\IntercambioAyB.AssemblyInfoInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Juan\obj\Debug\net6.0\IntercambioAyB.AssemblyInfo.cs
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Juan\obj\Debug\net6.0\IntercambioAyB.csproj.CoreCompileInputs.cache

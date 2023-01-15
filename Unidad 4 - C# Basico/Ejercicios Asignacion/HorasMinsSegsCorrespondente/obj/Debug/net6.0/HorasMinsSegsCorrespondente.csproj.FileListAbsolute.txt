@@ -1,0 +1,30 @@
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.exe
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.deps.json
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.runtimeconfig.json
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.pdb
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.csproj.AssemblyReference.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.AssemblyInfoInputs.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.AssemblyInfo.cs
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.csproj.CoreCompileInputs.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\refint\HorasMinsSegsCorrespondente.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.pdb
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.genruntimeconfig.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\HorasMinsSegsCorrespondente\obj\Debug\net6.0\ref\HorasMinsSegsCorrespondente.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.AssemblyInfoInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.AssemblyInfo.cs
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\refint\HorasMinsSegsCorrespondente.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.exe
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.deps.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.runtimeconfig.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\bin\Debug\net6.0\HorasMinsSegsCorrespondente.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\HorasMinsSegsCorrespondente.genruntimeconfig.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\HorasMinsSegsCorrespondente\obj\Debug\net6.0\ref\HorasMinsSegsCorrespondente.dll

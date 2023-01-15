@@ -1,0 +1,15 @@
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\bin\Debug\net6.0\Juan.exe
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\bin\Debug\net6.0\Juan.deps.json
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\bin\Debug\net6.0\Juan.runtimeconfig.json
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\bin\Debug\net6.0\Juan.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\bin\Debug\net6.0\Juan.pdb
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\Juan.csproj.AssemblyReference.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\Juan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\Juan.AssemblyInfoInputs.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\Juan.AssemblyInfo.cs
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\Juan.csproj.CoreCompileInputs.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\Juan.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\refint\Juan.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\Juan.pdb
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\Juan.genruntimeconfig.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\Juan\obj\Debug\net6.0\ref\Juan.dll

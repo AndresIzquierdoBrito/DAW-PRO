@@ -1,0 +1,15 @@
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\EjerciciosViejosenCSharp.exe
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\EjerciciosViejosenCSharp.deps.json
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\EjerciciosViejosenCSharp.runtimeconfig.json
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\EjerciciosViejosenCSharp.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\EjerciciosViejosenCSharp.pdb
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\EjerciciosViejosenCSharp.csproj.AssemblyReference.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\EjerciciosViejosenCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\EjerciciosViejosenCSharp.AssemblyInfoInputs.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\EjerciciosViejosenCSharp.AssemblyInfo.cs
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\EjerciciosViejosenCSharp.csproj.CoreCompileInputs.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\EjerciciosViejosenCSharp.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\refint\EjerciciosViejosenCSharp.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\EjerciciosViejosenCSharp.pdb
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\EjerciciosViejosenCSharp.genruntimeconfig.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\ref\EjerciciosViejosenCSharp.dll

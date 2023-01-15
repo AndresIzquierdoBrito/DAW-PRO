@@ -1,0 +1,15 @@
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\PorcentajeDado.exe
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\PorcentajeDado.deps.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\PorcentajeDado.runtimeconfig.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\PorcentajeDado.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\PorcentajeDado.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\PorcentajeDado.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\PorcentajeDado.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\PorcentajeDado.AssemblyInfoInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\PorcentajeDado.AssemblyInfo.cs
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\PorcentajeDado.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\PorcentajeDado.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\refint\PorcentajeDado.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\PorcentajeDado.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\PorcentajeDado.genruntimeconfig.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ref\PorcentajeDado.dll

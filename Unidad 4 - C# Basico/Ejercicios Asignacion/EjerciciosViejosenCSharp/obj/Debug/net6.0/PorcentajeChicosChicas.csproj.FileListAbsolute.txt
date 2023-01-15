@@ -1,0 +1,30 @@
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.exe
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.deps.json
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.runtimeconfig.json
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.pdb
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.csproj.AssemblyReference.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.AssemblyInfoInputs.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.AssemblyInfo.cs
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.csproj.CoreCompileInputs.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\refint\PorcentajeChicosChicas.dll
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.pdb
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.genruntimeconfig.cache
+C:\Users\ModuloPRO\source\repos\ABIntercambio\EjerciciosViejosenCSharp\obj\Debug\net6.0\ref\PorcentajeChicosChicas.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.exe
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.deps.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.runtimeconfig.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\bin\Debug\net6.0\PorcentajeChicosChicas.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.AssemblyInfoInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.AssemblyInfo.cs
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\refint\PorcentajeChicosChicas.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\PorcentajeChicosChicas.genruntimeconfig.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\EjerciciosViejosenCSharp\obj\Debug\net6.0\ref\PorcentajeChicosChicas.dll

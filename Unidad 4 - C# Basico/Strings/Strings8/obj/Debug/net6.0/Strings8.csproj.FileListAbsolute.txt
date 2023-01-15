@@ -1,0 +1,15 @@
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\bin\Debug\net6.0\Strings8.exe
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\bin\Debug\net6.0\Strings8.deps.json
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\bin\Debug\net6.0\Strings8.runtimeconfig.json
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\bin\Debug\net6.0\Strings8.dll
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\bin\Debug\net6.0\Strings8.pdb
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\Strings8.csproj.AssemblyReference.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\Strings8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\Strings8.AssemblyInfoInputs.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\Strings8.AssemblyInfo.cs
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\Strings8.csproj.CoreCompileInputs.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\Strings8.dll
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\refint\Strings8.dll
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\Strings8.pdb
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\Strings8.genruntimeconfig.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings8\obj\Debug\net6.0\ref\Strings8.dll

@@ -1,0 +1,8 @@
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\SecondAppSums\SecondAppSums\bin\Debug\SecondAppSums.exe.config
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\SecondAppSums\SecondAppSums\bin\Debug\SecondAppSums.exe
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\SecondAppSums\SecondAppSums\bin\Debug\SecondAppSums.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\SecondAppSums\SecondAppSums\obj\Debug\SecondAppSums.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\SecondAppSums\SecondAppSums\obj\Debug\SecondAppSums.csproj.SuggestedBindingRedirects.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\SecondAppSums\SecondAppSums\obj\Debug\SecondAppSums.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\SecondAppSums\SecondAppSums\obj\Debug\SecondAppSums.exe
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\SecondAppSums\SecondAppSums\obj\Debug\SecondAppSums.pdb

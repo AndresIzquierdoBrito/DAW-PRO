@@ -1,0 +1,15 @@
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\Strings2.csproj.AssemblyReference.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\Strings2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\Strings2.AssemblyInfoInputs.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\Strings2.AssemblyInfo.cs
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\Strings2.csproj.CoreCompileInputs.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\bin\Debug\net6.0\Strings2.exe
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\bin\Debug\net6.0\Strings2.deps.json
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\bin\Debug\net6.0\Strings2.runtimeconfig.json
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\bin\Debug\net6.0\Strings2.dll
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\bin\Debug\net6.0\Strings2.pdb
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\Strings2.dll
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\refint\Strings2.dll
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\Strings2.pdb
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\Strings2.genruntimeconfig.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings2\obj\Debug\net6.0\ref\Strings2.dll

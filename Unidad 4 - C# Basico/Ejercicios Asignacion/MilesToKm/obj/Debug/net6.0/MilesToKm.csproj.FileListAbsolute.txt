@@ -1,0 +1,15 @@
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\bin\Debug\net6.0\MilesToKm.exe
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\bin\Debug\net6.0\MilesToKm.deps.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\bin\Debug\net6.0\MilesToKm.runtimeconfig.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\bin\Debug\net6.0\MilesToKm.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\bin\Debug\net6.0\MilesToKm.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\MilesToKm.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\MilesToKm.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\MilesToKm.AssemblyInfoInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\MilesToKm.AssemblyInfo.cs
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\MilesToKm.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\MilesToKm.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\refint\MilesToKm.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\MilesToKm.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\MilesToKm.genruntimeconfig.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\MilesToKm\obj\Debug\net6.0\ref\MilesToKm.dll

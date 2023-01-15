@@ -1,0 +1,15 @@
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\ConseguirCentenas.exe
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\ConseguirCentenas.deps.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\ConseguirCentenas.runtimeconfig.json
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\ConseguirCentenas.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\bin\Debug\net6.0\ConseguirCentenas.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ConseguirCentenas.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ConseguirCentenas.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ConseguirCentenas.AssemblyInfoInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ConseguirCentenas.AssemblyInfo.cs
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ConseguirCentenas.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ConseguirCentenas.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\refint\ConseguirCentenas.dll
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ConseguirCentenas.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ConseguirCentenas.genruntimeconfig.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\PorcentajeDado\obj\Debug\net6.0\ref\ConseguirCentenas.dll

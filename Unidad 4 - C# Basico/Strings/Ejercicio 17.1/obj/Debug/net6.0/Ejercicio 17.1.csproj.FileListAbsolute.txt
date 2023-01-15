@@ -1,0 +1,15 @@
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\Ejercicio 17.1.csproj.AssemblyReference.cache
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\Ejercicio 17.1.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\Ejercicio 17.1.AssemblyInfoInputs.cache
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\Ejercicio 17.1.AssemblyInfo.cs
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\Ejercicio 17.1.csproj.CoreCompileInputs.cache
+M:\Desktop\Strings\Ejercicio 17.1\bin\Debug\net6.0\Ejercicio 17.1.exe
+M:\Desktop\Strings\Ejercicio 17.1\bin\Debug\net6.0\Ejercicio 17.1.deps.json
+M:\Desktop\Strings\Ejercicio 17.1\bin\Debug\net6.0\Ejercicio 17.1.runtimeconfig.json
+M:\Desktop\Strings\Ejercicio 17.1\bin\Debug\net6.0\Ejercicio 17.1.dll
+M:\Desktop\Strings\Ejercicio 17.1\bin\Debug\net6.0\Ejercicio 17.1.pdb
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\Ejercicio 17.1.dll
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\refint\Ejercicio 17.1.dll
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\Ejercicio 17.1.pdb
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\Ejercicio 17.1.genruntimeconfig.cache
+M:\Desktop\Strings\Ejercicio 17.1\obj\Debug\net6.0\ref\Ejercicio 17.1.dll

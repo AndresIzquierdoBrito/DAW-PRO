@@ -1,0 +1,15 @@
+M:\Desktop\Strings\Ejer14\bin\Debug\net6.0\Ejer14.exe
+M:\Desktop\Strings\Ejer14\bin\Debug\net6.0\Ejer14.deps.json
+M:\Desktop\Strings\Ejer14\bin\Debug\net6.0\Ejer14.runtimeconfig.json
+M:\Desktop\Strings\Ejer14\bin\Debug\net6.0\Ejer14.dll
+M:\Desktop\Strings\Ejer14\bin\Debug\net6.0\Ejer14.pdb
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\Ejer14.csproj.AssemblyReference.cache
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\Ejer14.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\Ejer14.AssemblyInfoInputs.cache
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\Ejer14.AssemblyInfo.cs
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\Ejer14.csproj.CoreCompileInputs.cache
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\Ejer14.dll
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\refint\Ejer14.dll
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\Ejer14.pdb
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\Ejer14.genruntimeconfig.cache
+M:\Desktop\Strings\Ejer14\obj\Debug\net6.0\ref\Ejer14.dll

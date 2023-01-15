@@ -1,0 +1,15 @@
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\bin\Debug\net6.0\Strings4.exe
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\bin\Debug\net6.0\Strings4.deps.json
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\bin\Debug\net6.0\Strings4.runtimeconfig.json
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\bin\Debug\net6.0\Strings4.dll
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\bin\Debug\net6.0\Strings4.pdb
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\Strings4.csproj.AssemblyReference.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\Strings4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\Strings4.AssemblyInfoInputs.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\Strings4.AssemblyInfo.cs
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\Strings4.csproj.CoreCompileInputs.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\Strings4.dll
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\refint\Strings4.dll
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\Strings4.pdb
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\Strings4.genruntimeconfig.cache
+C:\Users\ModuloPRO\source\repos\Strings\Strings4\obj\Debug\net6.0\ref\Strings4.dll

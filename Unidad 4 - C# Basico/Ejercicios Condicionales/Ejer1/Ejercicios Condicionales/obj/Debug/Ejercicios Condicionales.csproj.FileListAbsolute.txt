@@ -1,0 +1,8 @@
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Ejercicios Condicionales\Ejer1\Ejercicios Condicionales\bin\Debug\Ejercicios Condicionales.exe.config
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Ejercicios Condicionales\Ejer1\Ejercicios Condicionales\bin\Debug\Ejercicios Condicionales.exe
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Ejercicios Condicionales\Ejer1\Ejercicios Condicionales\bin\Debug\Ejercicios Condicionales.pdb
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Ejercicios Condicionales\Ejer1\Ejercicios Condicionales\obj\Debug\Ejercicios Condicionales.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Ejercicios Condicionales\Ejer1\Ejercicios Condicionales\obj\Debug\Ejercicios Condicionales.csproj.SuggestedBindingRedirects.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Ejercicios Condicionales\Ejer1\Ejercicios Condicionales\obj\Debug\Ejercicios Condicionales.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Ejercicios Condicionales\Ejer1\Ejercicios Condicionales\obj\Debug\Ejercicios Condicionales.exe
+M:\Desktop\Programacion\Unidad 2 - Comienzo C#\Ejercicios Condicionales\Ejer1\Ejercicios Condicionales\obj\Debug\Ejercicios Condicionales.pdb
