@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "M:\\Desktop\\Projects\\DAW-PRO\\Funciones\\04Ejer\\04Ejer.csproj": {}
+    "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\EJE0501 Ejercicios de Funciones y Recursividad\\04Ejer\\04Ejer.csproj": {}
   },
   "projects": {
-    "M:\\Desktop\\Projects\\DAW-PRO\\Funciones\\04Ejer\\04Ejer.csproj": {
+    "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\EJE0501 Ejercicios de Funciones y Recursividad\\04Ejer\\04Ejer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\Desktop\\Projects\\DAW-PRO\\Funciones\\04Ejer\\04Ejer.csproj",
+        "projectUniqueName": "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\EJE0501 Ejercicios de Funciones y Recursividad\\04Ejer\\04Ejer.csproj",
         "projectName": "04Ejer",
-        "projectPath": "M:\\Desktop\\Projects\\DAW-PRO\\Funciones\\04Ejer\\04Ejer.csproj",
+        "projectPath": "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\EJE0501 Ejercicios de Funciones y Recursividad\\04Ejer\\04Ejer.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "M:\\Desktop\\Projects\\DAW-PRO\\Funciones\\04Ejer\\obj\\",
+        "outputPath": "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\EJE0501 Ejercicios de Funciones y Recursividad\\04Ejer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
