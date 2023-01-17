@@ -17,7 +17,7 @@
 
             do
             {
-                tempOption = GetValidated.ReturnChar();
+                tempOption = GetValidated.CharValue();
                 tempOption = Char.ToUpper(tempOption);
                 if (GetValidated.IsAcceptedAmongChars(tempOption, acceptedTemps))
                     Console.WriteLine("El valor seleccionado tiene que ser: F o K");
@@ -51,7 +51,7 @@
 
         }
 
-        public static char ReturnChar()
+        public static char CharValue()
         {
             bool check = false;
             char returnedChar;
