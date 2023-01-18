@@ -8,13 +8,26 @@ namespace Ejer07
 {
     internal class Funciones
     {
-        public static int AmountOfCharAppearances(string introducedString, char charToFind)
+        public static int[] AmountPosCharAppearances(string? input, char ch)
         {
-            int cont = 0;
-            foreach (char ch in introducedString)
-                if (ch == charToFind) cont++;
-
-            return cont;
+            input += " ";
+            int[] values = new int[input.Split(ch).Length];
+            values[0] = values.Length - 1;
+            for (int i = 0, j = 1; i < input.Length; i++)
+            {
+                if (ch == input[i])
+                {
+                    values[j] = i;
+                    j++;
+                }
+            }
+            //foreach (char ch in input) MANCO, NO PARA CONSEGUIR POSICIONES DE ARRAY
+            //{
+            //    if (ch == ch)
+            //        values[j] = i;
+            //    i++;
+            //}
+            return values;
         }
 
         public static char CharValue()
