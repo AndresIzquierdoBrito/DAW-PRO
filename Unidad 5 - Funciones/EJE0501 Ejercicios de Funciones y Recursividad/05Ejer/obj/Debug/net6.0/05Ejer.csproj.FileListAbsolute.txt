@@ -1,0 +1,15 @@
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\bin\Debug\net6.0\05Ejer.exe
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\bin\Debug\net6.0\05Ejer.deps.json
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\bin\Debug\net6.0\05Ejer.runtimeconfig.json
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\bin\Debug\net6.0\05Ejer.dll
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\bin\Debug\net6.0\05Ejer.pdb
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\05Ejer.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\05Ejer.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\05Ejer.AssemblyInfoInputs.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\05Ejer.AssemblyInfo.cs
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\05Ejer.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\05Ejer.dll
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\refint\05Ejer.dll
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\05Ejer.pdb
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\05Ejer.genruntimeconfig.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\05Ejer\obj\Debug\net6.0\ref\05Ejer.dll
