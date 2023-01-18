@@ -1,9 +1,17 @@
-﻿internal class Program
+﻿using Ejer01;
+
+internal class Program
 {
-    private static void Main(string[] args)
+
+    static void Main(string[] args)
     {
-        int arraySize = 5;
-        int[] array = new int[arraySize];
-        
+        Console.WriteLine("Introduce el tamaño del vector");
+        int size = Funciones.IntValue();
+        int[] arr = new int[size];
+        Console.WriteLine("Introduce los elementos del vector");
+        Funciones.FillVectorRecursion(arr);
+        Console.WriteLine($"El número más pequeño del array es {Funciones.LowerNumb(arr)}");
+
     }
+
 }

@@ -16,6 +16,11 @@ namespace Ejer01
             SortArr(arr);
             return arr[0];
         }
+        public static int FillVectorRecursion(int[] arr, int numb = 0)
+        {
+            arr[numb] = IntValue();
+            return numb == arr.Length - 1 ? 0 : FillVectorRecursion(arr, numb + 1);
+        }
         public static int IntValue()
         {
             bool check = false;

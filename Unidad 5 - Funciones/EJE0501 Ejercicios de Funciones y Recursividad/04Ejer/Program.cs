@@ -11,14 +11,14 @@
             Console.WriteLine($"La cantidad de veces que aparece el caracter {introducedChar} en la string introducida es: {Funciones.AmountOfCharAppearances(introducedString , introducedChar)}");
         }
     }
-
     internal class Funciones
     {
         public static int AmountOfCharAppearances(string introducedString, char charToFind)
         {
             int cont = 0;
             foreach (char ch in introducedString)
-                if(ch == charToFind) cont++;
+                if(ch == charToFind) 
+                    cont++;
 
             return cont;
         }
