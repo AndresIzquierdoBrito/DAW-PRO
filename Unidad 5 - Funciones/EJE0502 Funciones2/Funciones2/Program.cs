@@ -6,7 +6,7 @@
         public static void Main(string[] args)
         {
             int values = 8;
-            int[] numeros = Array.Empty<int>();
+            int[] numeros = new int[values];
 
             Funciones.RellenarArrayRand(ref numeros, values);
             Console.WriteLine($"El array queda asi: {string.Join(", ", numeros)}");
