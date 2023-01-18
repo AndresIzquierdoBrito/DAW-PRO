@@ -1,0 +1,15 @@
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\bin\Debug\net6.0\Ejer06.exe
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\bin\Debug\net6.0\Ejer06.deps.json
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\bin\Debug\net6.0\Ejer06.runtimeconfig.json
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\bin\Debug\net6.0\Ejer06.dll
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\bin\Debug\net6.0\Ejer06.pdb
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\Ejer06.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\Ejer06.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\Ejer06.AssemblyInfoInputs.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\Ejer06.AssemblyInfo.cs
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\Ejer06.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\Ejer06.dll
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\refint\Ejer06.dll
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\Ejer06.pdb
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\Ejer06.genruntimeconfig.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0502 Funciones2\Ejer06\obj\Debug\net6.0\ref\Ejer06.dll

@@ -2,6 +2,8 @@
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        int arraySize = 5;
+        int[] array = new int[arraySize];
+        
     }
 }

@@ -9,25 +9,38 @@ namespace Ejer02
 {
     class Funciones
     {
-        private static void SortArr(int[] arr) => Array.Sort(arr);
-        public static int LowerNumb(int[] arr)
+        public static int IndexOfMin(int[] array)
         {
-            SortArr(arr);
-            return arr[0];
+            int minValue = array[0];
+            int minPos = -1;
+            int pos = -1;
+
+            foreach (int num in array)
+            {
+                pos++;
+
+                if (num <= minValue)
+                {
+                    minValue = num;
+                    minPos = pos;
+                }
+            }
+            return minPos;
         }
 
-        public static int ValidateNumb()
+        public static int IntValue()
         {
-            int numb = 0;
-            while (!Int32.TryParse(Console.ReadLine(), out numb))
-                Console.WriteLine("Introduce un número entero válido");
-            return numb;
+            int returnedInt;
+            while (!Int32.TryParse(Console.ReadLine(), out returnedInt))
+                Console.WriteLine("Valor no válido. Valor esperado: ENTERO");
+            return returnedInt;
         }
 
-        public static int FillVector(int[] arr, int numb = 0)
+        public static int FillVectorRec(int[] arr, int numb = 0)
         {
-            arr[numb] = ValidateNumb();
-            return numb == arr.Length - 1 ? 0 : FillVector(arr, numb + 1);
+            arr[numb] = IntValue();
+            return numb == arr.Length - 1 ? 0 : FillVectorRec(arr, numb + 1);
         }
+       
     }
 }

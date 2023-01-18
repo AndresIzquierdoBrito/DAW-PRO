@@ -8,7 +8,7 @@ namespace Ejer03
 {
     internal class Funciones
     {
-        public static void RellenarArray(ref int[] nums, int amountValues)
+        public static void RellenarArrayRand(ref int[] nums, int amountValues)
         {
             Random rnd  = new Random();
             nums = new int[amountValues];
