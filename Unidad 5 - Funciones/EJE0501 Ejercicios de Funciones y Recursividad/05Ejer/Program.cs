@@ -31,8 +31,10 @@
                         break;
                 }
                 if (pila.Length == 0)
+                {
                     Console.WriteLine("La pila de datos esta vacia. El programa ha finalizado.");
                     check = true;
+                }
 
             }
         }
@@ -50,15 +52,14 @@
         public static string ExtraerDatosPila(ref string pila)
         {
             Console.Clear();
-            Console.WriteLine($"Dato extraido: {pila[0]}");
-            return pila = pila.Remove(0,1); 
-
+            Console.WriteLine($"Dato extraido: {pila[^1]}");
+            return pila = pila.Remove(pila.Length - 1,1); 
         }
         public static void VisualizarPila(string pila)
         {
             Console.Clear();
             Console.WriteLine("Contenido de la pila: \n▄▄▄▄");
-            foreach (char c in pila)
+            foreach (char c in pila.Reverse())
             {
                 Console.WriteLine($"▌ {c} ▌");
             }
