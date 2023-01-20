@@ -17,6 +17,8 @@ namespace Ejer06
 
             return sum / amountValues;
         }
+        // Falta recursividad
+        // Aplicate
         public static void FillDecimalAray(ref decimal[] nums, int amountValues)
         {
             Random rnd = new Random();

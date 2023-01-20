@@ -21,6 +21,7 @@ namespace Ejer07
                     j++;
                 }
             }
+            // Falta pair programming
             //foreach (char ch in input) MANCO, NO PARA CONSEGUIR POSICIONES DE ARRAY
             //{
             //    if (ch == ch)

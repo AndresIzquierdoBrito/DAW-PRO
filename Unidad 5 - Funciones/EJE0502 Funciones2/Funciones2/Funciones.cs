@@ -13,7 +13,14 @@ namespace Ejer03
             Random rnd  = new Random();
             nums = new int[amountValues];
             for (int i = 0; i < amountValues; i++)
-                nums[i] = rnd.Next(1,100);
+                nums[i] = rnd.Next(1,99);
+        }
+        public static int IntValue()
+        {
+            int returnedInt;
+            while (!Int32.TryParse(Console.ReadLine(), out returnedInt))
+                Console.WriteLine("Valor no válido. Valor esperado: ENTERO");
+            return returnedInt;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Ejer04
             {
                 if (int.TryParse(Console.ReadLine(), out returnedInt))
                     check = true;
-                else Console.WriteLine("Valor no válido. Valor esperado: ENTERO");
+                else Console.WriteLine("Value not valid. Expected value: INTEGER");
             } while (!check);
 
             return returnedInt;

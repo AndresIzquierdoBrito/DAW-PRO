@@ -1,11 +1,10 @@
 ﻿namespace Ejer03
 {
-
     internal class Program
     {
         public static void Main(string[] args)
         {
-            int values = 8;
+            int values = Funciones.IntValue();
             int[] numeros = new int[values];
 
             Funciones.RellenarArrayRand(ref numeros, values);
