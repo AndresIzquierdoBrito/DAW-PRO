@@ -1,0 +1,15 @@
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\bin\Debug\net6.0\Recursivas.exe
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\bin\Debug\net6.0\Recursivas.deps.json
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\bin\Debug\net6.0\Recursivas.runtimeconfig.json
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\bin\Debug\net6.0\Recursivas.dll
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\bin\Debug\net6.0\Recursivas.pdb
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\Recursivas.csproj.AssemblyReference.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\Recursivas.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\Recursivas.AssemblyInfoInputs.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\Recursivas.AssemblyInfo.cs
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\Recursivas.csproj.CoreCompileInputs.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\Recursivas.dll
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\refint\Recursivas.dll
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\Recursivas.pdb
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\Recursivas.genruntimeconfig.cache
+M:\Desktop\Programacion\Unidad 5 - Funciones\EJE0501 Ejercicios de Funciones y Recursividad\Recursivas\obj\Debug\net6.0\ref\Recursivas.dll
