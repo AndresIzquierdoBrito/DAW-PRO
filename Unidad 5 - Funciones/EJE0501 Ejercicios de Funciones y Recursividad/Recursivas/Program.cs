@@ -7,6 +7,8 @@ internal class Program
         //Ejercicio 6
 
         //Functions.PrintNumbers(1);
+        //Console.WriteLine(Functions.PrintNumbersUntil100String(1));
+        //Console.WriteLine(Functions.PrintNumbersUntil100Reverse(1));
 
         //Ejercicio 7
 
@@ -14,9 +16,9 @@ internal class Program
 
         //Ejercicio 8
 
-        //string s = "abcabcabcd"; 
-        //char c = 'a';
-        //Console.WriteLine(Functions.letras(s, c));
+        string s = "abcabcabcd"; 
+        char c = 'a';
+        Console.WriteLine(Functions.letras(s, c));
 
     }
 }

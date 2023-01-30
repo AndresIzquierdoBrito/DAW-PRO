@@ -12,10 +12,28 @@ namespace Recursivas
         // Ejercicio 6
         public static void PrintNumbers(int n)
         {
+            if (n <= 100)
+            {
+                Console.WriteLine(n);
+                PrintNumbers(n + 1);
+            }
+            
+        }
+        public static string PrintNumbersUntil100String(int n)
+        {
             if (n > 100)
-                return;
-            Console.WriteLine(n);
-            PrintNumbers(n + 1);
+            {
+                return "";
+            }
+            return n + " " + PrintNumbersUntil100String(n + 1);
+        }
+        public static string PrintNumbersUntil100Reverse(int n)
+        {
+            if (n > 100)
+            {
+                return "";
+            }
+            return PrintNumbersUntil100Reverse(n + 1) + " " + n ;
         }
         // Ejercicio 7
         public static bool IsPrime(int n, int i = 2)
@@ -40,7 +58,7 @@ namespace Recursivas
                 i = 1;
             
             return i + letras(s, c, index + 1);
-            
+          
         }
 
     }
