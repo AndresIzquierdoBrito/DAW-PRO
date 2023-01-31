@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\Desktop\\Programacion\\ProPair\\ProPair\\ProPair.csproj",
-      "projectName": "ProPair",
-      "projectPath": "M:\\Desktop\\Programacion\\ProPair\\ProPair\\ProPair.csproj",
+      "projectUniqueName": "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\ENT0501\\ENT0501\\ENT0501.csproj",
+      "projectName": "ENT0501",
+      "projectPath": "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\ENT0501\\ENT0501\\ENT0501.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "M:\\Desktop\\Programacion\\ProPair\\ProPair\\obj\\",
+      "outputPath": "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\ENT0501\\ENT0501\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",

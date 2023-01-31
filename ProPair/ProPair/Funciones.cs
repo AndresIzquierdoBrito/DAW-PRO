@@ -37,34 +37,40 @@ namespace ProPair
         }
         public static void MostrarDatosMuestra(Personas[] listaPersonas)
         {
-            for (int i = 0; i < listaPersonas.Length; i++)
+            //for (int i = 0; i < listaPersonas.Length; i++)
+            //{
+            //    Console.WriteLine($"Nombre de persona[{i}]: {listaPersonas[i].nombre}");
+            //    Console.WriteLine($"Apellido de persona[{i}]: {listaPersonas[i].apellidos}");
+            //    Console.WriteLine($"Altura de persona[{i}]: {listaPersonas[i].altura}\n");
+            //}
+            int i = 0;
+            foreach (Personas persona in listaPersonas)
             {
-                Console.WriteLine($"Nombre de persona[{i}]: {listaPersonas[i].nombre}");
-                Console.WriteLine($"Apellido de persona[{i}]: {listaPersonas[i].apellidos}");
-                Console.WriteLine($"Altura de persona[{i}]: {listaPersonas[i].altura}\t");
+                Console.WriteLine($"Nombre de persona[{i}]: {persona.nombre}");
+                Console.WriteLine($"Apellido de persona[{i}]: {persona.apellidos}");
+                Console.WriteLine($"Altura de persona[{i}]: {persona.altura}\n");
+                i++;
             }
+
         }
     }
     internal class Validated
     {
-        public static int IntValue()
+        public static int IntValue() //Pedir numero entero validado
         {
-            bool check = false;
             int returnedInt;
-            do
+            while (!int.TryParse(Console.ReadLine(), out returnedInt))
             {
-                if (int.TryParse(Console.ReadLine(), out returnedInt))
-                    check = true;
-                else Console.WriteLine("Value not valid. Expected value: INTEGER");
-            } while (!check);
-
+                Console.WriteLine("Value not valid. Expected value: INTEGER");
+            }
             return returnedInt;
         }
         public static decimal DecimalValue(bool positive, int upperLimit) //Funcion reutilizable, pasandole en positive si quieres que sea positivo o negativo y en upperLimit el numero limite entero
-        {
+        {//Odio esta funcion
             decimal returnedDecimal;
             bool decimalCheck, positiveCheck, limiteCheck;
-            do {
+            do
+            {
                 decimalCheck = false; positiveCheck = false; limiteCheck = false;
                 if (Decimal.TryParse(Console.ReadLine(), out returnedDecimal))
                 {
@@ -74,13 +80,13 @@ namespace ProPair
                     if (upperLimit == 0)
                         limiteCheck = true;
                     else
-                        if (returnedDecimal < upperLimit)
-                            limiteCheck = true;
+                        if (returnedDecimal <= upperLimit)
+                        limiteCheck = true;
                 }
-            } while(!decimalCheck || !positiveCheck || !limiteCheck);
+            } while (!decimalCheck || !positiveCheck || !limiteCheck);
             return returnedDecimal;
         }
-        public static string Name()
+        public static string Name() //Funcion para verificar que un nombre introducido no esta vacio
         {
             string nameInput;
             do
@@ -88,7 +94,7 @@ namespace ProPair
                 nameInput = Console.ReadLine();
                 if (nameInput.Trim().Length == 0)
                     Console.WriteLine("Nombre no valido. No puede estar vacío");
-            } while (nameInput.Trim().Length == 0 );
+            } while (nameInput.Trim().Length == 0);
             return nameInput;
         }
     }
