@@ -1,0 +1,15 @@
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\ProPair.csproj.AssemblyReference.cache
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\ProPair.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\ProPair.AssemblyInfoInputs.cache
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\ProPair.AssemblyInfo.cs
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\ProPair.csproj.CoreCompileInputs.cache
+M:\Desktop\ProPair\ProPair\bin\Debug\net6.0\ProPair.exe
+M:\Desktop\ProPair\ProPair\bin\Debug\net6.0\ProPair.deps.json
+M:\Desktop\ProPair\ProPair\bin\Debug\net6.0\ProPair.runtimeconfig.json
+M:\Desktop\ProPair\ProPair\bin\Debug\net6.0\ProPair.dll
+M:\Desktop\ProPair\ProPair\bin\Debug\net6.0\ProPair.pdb
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\ProPair.dll
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\refint\ProPair.dll
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\ProPair.pdb
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\ProPair.genruntimeconfig.cache
+M:\Desktop\ProPair\ProPair\obj\Debug\net6.0\ref\ProPair.dll
