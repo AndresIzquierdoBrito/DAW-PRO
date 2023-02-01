@@ -12,7 +12,6 @@ namespace ProPair
         {
             Console.WriteLine("Calcular media de altura.\nIntroduce la cantidad de personas a tratar:");
             int numPersonas = Validated.IntValue();
-
             Personas[] listaPersonas = CSFunciones.LeerDatosMuestra(numPersonas);
 
             int menuOption;
@@ -26,6 +25,7 @@ namespace ProPair
                     case 1: CSFunciones.MostrarDatosMuestra(listaPersonas); break;
                     case 2: CSAlturas.MostrarPersonas(CSAlturas.PersonasPorEncimaMedia(listaPersonas)); break;
                     case 3: CSAlturas.MostrarPersonas(CSAlturas.PersonasPorDebajoMedia(listaPersonas)); break;
+                    default: Console.WriteLine("No es una opción valida."); break;
                 }
             } while (menuOption != 4);
         }
