@@ -9,7 +9,7 @@ namespace ENT0501
 {
     internal class Functions
     {
-        public static void RequestHouseData(ref string[] Casas, ref double[] Costo) //Solicita un nombre de casa unico y un costo positivo de la cantidad de casas introducidas
+        public static void RequestHouseData(string[] Casas, double[] Costo) //Solicita un nombre de casa unico y un costo positivo de la cantidad de casas introducidas
         {
             Console.Clear();
             for (int i = 0; i < Casas.Length; i++)
@@ -45,7 +45,7 @@ namespace ENT0501
             } while (!check);
             return name;
         }
-        public static List<int> GetHousesBetweenPrice(ref double[] Costo) 
+        public static List<int> GetHousesBetweenPrice(double[] Costo) 
             /* Pide un limite superior y un limite inferior para despues guardar en una lista
                los indices de las casas que se encuentran dentro de este rango. */
         {
@@ -63,7 +63,7 @@ namespace ENT0501
             }
             return housesBetween;
         }
-        public static List<int> GetHousesUnderPrice(ref double[] Costo) // Crea una lista con los indices de las casas por debajo de un valor pedido al usuario
+        public static List<int> GetHousesUnderPrice(double[] Costo) // Crea una lista con los indices de las casas por debajo de un valor pedido al usuario
         {
             List<int> housesUnder = new List<int>();
             Console.Clear();
@@ -78,7 +78,7 @@ namespace ENT0501
             }
             return housesUnder;
         }
-        public static void DisplayHousesList(List<int> Houses, ref string[] Casas, ref double[] Costo) // Muestra por pantalla el indice, nombre y coste de la lista de valores enteros
+        public static void DisplayHousesList(List<int> Houses, string[] Casas, double[] Costo) // Muestra por pantalla el indice, nombre y coste de la lista de valores enteros
         {
             for (int i = 0; i < Houses.Count; i++)
             {
