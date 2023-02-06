@@ -16,12 +16,12 @@ namespace ENT0501
             {
                 Console.WriteLine($"Houses remaining: {Casas.Length - i}");
                 Console.WriteLine($"Input the name of the house #{i}: ");
-                Casas[i] = GetHouseName(ref Casas);
+                Casas[i] = GetHouseName(Casas);
                 Costo[i] = Validated.DoubleValue("Input the price of the house in EURO, price has to be", positiveOnly: true);
                 Console.Clear();
             }
         }
-        private static string GetHouseName(ref string[] Casas) // Valido que el nombre no esta vacio y no se reptire previamente, privada ya que es solo utilizada dentro de la clase
+        private static string GetHouseName(string[] Casas) // Valido que el nombre no esta vacio y no se reptire previamente, privada ya que es solo utilizada dentro de la clase
         {
             string? name;
             bool check;
