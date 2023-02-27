@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\Desktop\\Projects\\DAW-PRO\\Funciones\\02Ejer\\02Ejer.csproj",
+      "projectUniqueName": "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\EJE0501 Ejercicios de Funciones y Recursividad\\02Ejer\\02Ejer.csproj",
       "projectName": "02Ejer",
-      "projectPath": "M:\\Desktop\\Projects\\DAW-PRO\\Funciones\\02Ejer\\02Ejer.csproj",
+      "projectPath": "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\EJE0501 Ejercicios de Funciones y Recursividad\\02Ejer\\02Ejer.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "M:\\Desktop\\Projects\\DAW-PRO\\Funciones\\02Ejer\\obj\\",
+      "outputPath": "M:\\Desktop\\Programacion\\Unidad 5 - Funciones\\EJE0501 Ejercicios de Funciones y Recursividad\\02Ejer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
