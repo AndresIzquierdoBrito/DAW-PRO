@@ -4,7 +4,13 @@
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            if (Ficheros.FilesExists() && Ficheros.LoadFile())
+            {
+                if (!Ficheros.VerifyCSVAges())
+                {
+                    //Creat archivo finals function
+                }
+            }
         }
     }
 }

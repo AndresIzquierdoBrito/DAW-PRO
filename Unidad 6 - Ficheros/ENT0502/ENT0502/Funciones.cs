@@ -8,5 +8,6 @@ namespace ENT0502
 {
     internal class Funciones
     {
+        
     }
 }
