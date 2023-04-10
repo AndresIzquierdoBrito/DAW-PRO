@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EJ01
 {
-    class Client
+    public class Client
     {
         private string name;
 
@@ -14,22 +14,18 @@ namespace EJ01
 
         private string lastSurname;
 
-        private int id = 0;
+        private int id;
+
+        private static int lastId = 0;
 
         public Client(string name, string firstSurname, string lastSurname)
-        {
+         {
             this.name = name;
             this.firstSurname = firstSurname;
             this.lastSurname = lastSurname;
-
-            incrementId();
-            // id -> funcion
+            this.id = ++lastId;
         }
 
-        public int incrementId()
-        {
-            return id++; 
-        }
 
         public string Name
         {
@@ -52,7 +48,6 @@ namespace EJ01
         public int Id
         {
             get => id; 
-            set => id = value;
         }
     }
 }
