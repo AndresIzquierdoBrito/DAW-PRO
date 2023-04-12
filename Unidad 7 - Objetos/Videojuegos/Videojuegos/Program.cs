@@ -5,8 +5,8 @@ internal class Program
     private static void Main(string[] args)
     {
         List<Game> games = new List<Game>();
-        Genre.InitializeGenres();
-
+        List<Genre> genres = new List<Genre>();
+        Functions.InitializeGenres(genres);
         int menuOption;
         do
         {
@@ -16,7 +16,7 @@ internal class Program
             {
                 case 1:
                     Console.Clear();
-                    Functions.AddGame(games);
+                    Functions.AddGame(games, genres);
                     break;
 
                 case 2:

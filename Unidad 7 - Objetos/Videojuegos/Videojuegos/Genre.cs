@@ -10,7 +10,8 @@ namespace Videojuegos
     {
         private string? name;
 
-        private static List<Genre> genres = new List<Genre>();
+        private int minAge;
+
 
         public string Name
         {
@@ -18,33 +19,26 @@ namespace Videojuegos
             set { name = value; }
         }
 
-        public Genre(string name)
+        public int MinAge
+        {
+            get { return minAge; }
+            set { minAge = value; }
+        }
+
+        public Genre(string name, int age)
         {
             this.Name = name ?? throw new ArgumentNullException(nameof(name));
-            genres.Add(this);
+            this.MinAge = age;
         }
+  
 
-        public static void InitializeGenres()
-        {
-            new Genre("Action");
-            new Genre("Adventure");
-            new Genre("Plataformers");
-            new Genre("Shooter");
-            new Genre("Horror");
-            new Genre("Mystery");
-            new Genre("RPG");
-            new Genre("Sci-Fi");
-            new Genre("Multiplayer Online Battle Arena");
-            new Genre("Massively multiplayer Online");
-        }
-
-        public static Genre ChooseGenre()
+        public static Genre ChooseGenre(List<Genre> genres)
         {
             int choice, maxAmountChoice = genres.Count;
 
-            Console.WriteLine("Available genres:");
+            Console.WriteLine("Available genres: (Minimum age)");
             for (int i = 0; i < maxAmountChoice; i++)
-                Console.WriteLine($"{i + 1}. {genres[i].Name}");
+                Console.WriteLine($"{i + 1}. {genres[i].Name} ({genres[i].MinAge})");
 
             do
             {
@@ -52,6 +46,11 @@ namespace Videojuegos
             } while (!int.TryParse(Console.ReadLine(), out choice) || choice < 1 || choice > maxAmountChoice);
 
             return genres[choice - 1];
+        }
+
+        public override string ToString()
+        {
+            return $"{name} {minAge}";
         }
     }
 

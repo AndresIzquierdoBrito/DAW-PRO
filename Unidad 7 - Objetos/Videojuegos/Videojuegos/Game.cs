@@ -33,10 +33,15 @@ namespace Videojuegos
             set { price = value; }
         }
 
-        public string Genre
+        public Genre Genre
         {
-            get { return genre.Name; }
-            set { genre.Name = value; }
+            get { return genre; }
+            set { genre = value; }
+        }
+
+        public override string ToString()
+        {
+            return $"{name} {price} {genre}";
         }
     }
 }

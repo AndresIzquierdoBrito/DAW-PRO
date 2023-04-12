@@ -8,11 +8,11 @@ namespace Videojuegos
 {
     internal class Functions
     {
-        public static List<Game> AddGame(List<Game> gameList)
+        public static List<Game> AddGame(List<Game> gameList, List<Genre> genres)
         {
             string name = InputValidName();
             decimal price = InputDoubleValue(lowerLimit: 0, maxDecimalPlaces: 2);
-            Genre genre = Genre.ChooseGenre();
+            Genre genre = Genre.ChooseGenre(genres);
 
             Game game = new Game(name, price, genre);
             gameList.Add(game);
@@ -58,6 +58,20 @@ namespace Videojuegos
                     Console.WriteLine($"{game.Name}\t\t\t{game.Price}\t\t\t{game.Genre}");
             }
             EndMethod();
+        }
+
+        public static void InitializeGenres(List<Genre> genres)
+        {
+            genres.Add(new Genre("Action", 13));
+            genres.Add(new Genre("Adventure", 10));
+            genres.Add(new Genre("Plataformers", 6));
+            genres.Add(new Genre("Shooter", 17));
+            genres.Add(new Genre("Horror", 17));
+            genres.Add(new Genre("Mystery", 13));
+            genres.Add(new Genre("RPG", 13));
+            genres.Add(new Genre("Sci-Fi", 10));
+            genres.Add(new Genre("Multiplayer Online Battle Arena", 13));
+            genres.Add(new Genre("Massively multiplayer Online", 13));
         }
 
         public static string InputValidName()
