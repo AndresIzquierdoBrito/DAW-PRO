@@ -67,8 +67,8 @@ namespace EJ01
             {
                 Console.WriteLine("Introduce name and surname(s) of the desired client: ");
                 string nameToBeFound = ValidName();
-                string[] clientToBeFound = nameToBeFound.Split(' ');
                 int amountClients = listClients.Count;
+                string[] clientToBeFound = nameToBeFound.Split(' ');
                 List<int> foundIDsIndex = new();
                 try
                 {

@@ -13,31 +13,27 @@ internal class Program
         int menuOption;
         do
         {
+            Console.Clear();
             Console.Write("---------------- CLIENT MANAGER SYSTEM --------------------\n\t1. Create client.\n\t2. Find client by ID\n\t3. Find if client exists\n\t4. Show all clients.\n\t5. Delete client.\n\t6. Exit\n\nSelect an option");
             menuOption = Methods.IntValue(1, 6);
             switch (menuOption)
             {
                 case 1:
-                    Console.Clear();
                     Methods.AddClient(clients);
                     break;
 
                 case 2:
-                    Console.Clear();
                     Methods.FindClient(clients);
                     break; 
                 case 3:
-                    Console.Clear();
                     Methods.FindIfClientExists(clients);
                     break;
 
-                case 4: 
-                    Console.Clear();
+                case 4:
                     Methods.GetAllClients(clients);
                     break;
 
                 case 5:
-                    Console.Clear();
                     Methods.RemoveClient(clients);
                     break; 
             }

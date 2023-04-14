@@ -15,7 +15,7 @@ namespace Videojuegos
 
         public string Name
         {
-            get { return name; }
+            get { return name ?? throw new ArgumentNullException(nameof(name)); }
             set { name = value; }
         }
 
