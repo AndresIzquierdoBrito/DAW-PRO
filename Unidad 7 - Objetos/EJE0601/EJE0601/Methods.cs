@@ -105,8 +105,6 @@ namespace EJ01
         }
 
         public static int IntValue(int lowerLimit = int.MinValue, int upperLimit = int.MaxValue)
-        /* Defino dos parametros para definir el rango de valores, al asingarles MaxValue/MinValue, 
-           si no se le pasa un numero no hay limite (mas alla del limite de memoria de int) */
         {
             int userInput;
             bool check = false;
