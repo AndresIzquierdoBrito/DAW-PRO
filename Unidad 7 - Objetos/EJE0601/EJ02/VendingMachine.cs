@@ -18,7 +18,7 @@ namespace EJ02
         {
             int totalAmount = stock.amount.Count;
             for (int i = 0; i < totalAmount; i++)
-                stock.amount[i] = 10;
+                    stock.amount[i] = 10;
             Console.WriteLine("Succesfully refilled the vending machine.");
         }
 
