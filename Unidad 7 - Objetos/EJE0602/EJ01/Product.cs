@@ -37,7 +37,7 @@ namespace EJ01
 
         public decimal GetPrice() => Price;
 
-        public override string ToString() => $"{Name}:{new string(' ', 16 - Name.Length)}{Price:f2}$";
+        public override string ToString() => $"{Name, -10}{Price:f2}$";
 
     }
 

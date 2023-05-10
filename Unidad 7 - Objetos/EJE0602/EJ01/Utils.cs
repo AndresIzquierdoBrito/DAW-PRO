@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace EJ01
 {
-    internal class Functions
+    internal class Utils
     {
         public static decimal IntroduceMoney()
         {
@@ -67,5 +68,19 @@ namespace EJ01
             Console.ReadKey();
             Console.Clear();
         }
+
+        public static string ValidProductName()
+        {
+            string n;
+            do
+            {
+                Console.Write("Product name: ");
+                n = Console.ReadLine()?.Trim() ?? "";
+                
+                Console.Clear();
+                Console.WriteLine(n == "" || !Regex.IsMatch(n, @"^[a-zA-Z0-9]+$") ? "Invalid name, input again" : "");
+            } while (n == "" || !Regex.IsMatch(n, @"^[a-zA-Z0-9]+$"));
+            return n;
+        }        
     }
 }
