@@ -30,7 +30,6 @@ namespace EJ01
         {
             if(selectedProducts.Count > 0)
                 totalSale += selectedProducts.Last().GetPrice();
-            Console.WriteLine(totalSale);
             return true;
         }
     }
