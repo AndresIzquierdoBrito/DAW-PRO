@@ -47,6 +47,7 @@ namespace EJ01
             this.Stock = stock;
         }
 
-        public override string ToString() => $"{Product, -10} [{Stock}]";
+        public void RemoveOneStock() => SetStock(Stock - 1);
+        public override string ToString() => $"{Product, -10} [{Stock:00}]";
     }
 }

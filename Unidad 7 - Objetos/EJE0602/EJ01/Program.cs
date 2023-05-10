@@ -16,10 +16,10 @@ namespace EJ01
                 Console.Clear();
                 switch (menuOption)
                 {
-                    //case 1:
-                    //    vendingMachine.ExtractProduct();
-                    //    Utils.EndMethod();
-                    //    break;
+                    case 1:
+                        vendingMachine.ExtractProduct();
+                        Utils.EndMethod();
+                        break;
                     case 2:
                         vendingMachine.RefillAllProducts();
                         Utils.EndMethod();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EJ01
 {
-    public class Product
+    internal class Product
     {
         private string Name { get; set; }
 

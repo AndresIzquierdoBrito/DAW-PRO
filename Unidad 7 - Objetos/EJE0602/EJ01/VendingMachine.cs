@@ -12,10 +12,12 @@ namespace EJ01
     {
         private List<Line> Lines = new();
 
-
         private int MaxAmountLines { get; set; }
 
         private int MaxDepth { get; set; }
+
+        private static decimal amountedSale;
+
         private int GetMaxStockerPerLine() => this.MaxDepth;
 
         private void SetMaxStockPerLine(int maxStock)
@@ -57,8 +59,8 @@ namespace EJ01
 
         public void RemoveProduct()
         {
-            Console.WriteLine("Choose one of the following products to remove: ");
             int totalAmount = Lines.Count, option;
+            Console.WriteLine("Choose one of the following products to remove: ");
             for (int i = 0; i < totalAmount; i++)
             {
                 if (i % 3 == 0)
@@ -74,32 +76,34 @@ namespace EJ01
             Console.WriteLine("Succesfully refilled the vending machine.");
         }
 
-        //public void ExtractProduct()
-        //{
+        public void ExtractProduct()
+        {
 
-        //    int i = 0, option;
-        //    Console.WriteLine("Choose one of the following products to purchase: ");
-        //    Lines.ForEach(product =>
-        //    {
-        //        if (i % 4 == 0)
-        //            Console.WriteLine();
-        //        Console.Write($"({i + 1}) {Lines[i]}\t");
-        //        i++;
-        //    });
+            int totalAmount = Lines.Count, option;
+            
+            Transaction transaction = new(10);
+            do
+            {
+                Console.WriteLine("Choose one of the following products to purchase, press (0) if you want to finish the transaction:");
+                for (int i = 0; i < totalAmount; i++)
+                {
+                    if (i % 3 == 0)
+                        Console.WriteLine();
+                    Console.Write($"({i + 1:00}) {Lines[i]}\t");
+                }
+                Console.Write("\n\nChoose an option");
+                option = Utils.IntValue(lowerLimit: 0, upperLimit: totalAmount);
+                if (option != 0 && Lines[option - 1].GetStock() > 0 && transaction.IsSalePossible())
+                {
+                    Lines[option - 1].RemoveOneStock();
+                    transaction.selectedProducts.Add(Lines[option - 1].GetProduct());
+                }
+                Console.ReadKey();
+                Console.Clear();
+            } while (option != 0);
 
-        //    bool IsSalePossible = true;
-        //    Console.Write("Select option ");
-        //    do
-        //    {
-        //        option = Utils.IntValue(lowerLimit: 1, upperLimit: stock.products.Count);
-        //        if (stock.amount[option - 1] == 0)
-        //            IsSalePossible = false;
-        //    } while (!IsSalePossible);
-
-        //    stock.amount[option - 1]--;
-        //    amountedSale += stock.products[option - 1].GetPrice();
-        //    selectedItems.Add(option - 1);
-        //}
+            Console.WriteLine(transaction.IsSalePossible);
+        }
 
         public void ShowStock()
         {
