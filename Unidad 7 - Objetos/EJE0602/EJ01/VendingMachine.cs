@@ -78,31 +78,38 @@ namespace EJ01
 
         public void ExtractProduct()
         {
-
             int totalAmount = Lines.Count, option;
-            
-            Transaction transaction = new(10);
+            decimal initialBalance;
+            List<Product> purchaseList = new List<Product>();
+
+            Console.WriteLine("Introduce the amount of money for purchase.");
+            initialBalance = Utils.DoubleValue(lowerLimit: 0.01m, maxDecimalPlaces: 2);
             do
             {
                 Console.WriteLine("Choose one of the following products to purchase, press (0) if you want to finish the transaction:");
-                for (int i = 0; i < totalAmount; i++)
-                {
-                    if (i % 3 == 0)
-                        Console.WriteLine();
-                    Console.Write($"({i + 1:00}) {Lines[i]}\t");
-                }
+                ShowStock();
                 Console.Write("\n\nChoose an option");
                 option = Utils.IntValue(lowerLimit: 0, upperLimit: totalAmount);
-                if (option != 0 && Lines[option - 1].GetStock() > 0 && transaction.IsSalePossible())
+
+                if (option != 0)
                 {
-                    Lines[option - 1].RemoveOneStock();
-                    transaction.selectedProducts.Add(Lines[option - 1].GetProduct());
+                    if (Transaction.IsSalePossible(purchaseList, initialBalance))
+                    {
+                        if (Lines[option - 1].GetStock() > 0)
+                        {
+                            Lines[option - 1].RemoveOneStock();
+                            purchaseList.Add(Lines[option - 1].GetProduct());
+                            Console.WriteLine($"{Lines[option - 1].GetProduct().GetName()} added to purchase list.");
+                        }
+                        else Console.WriteLine("There is no stock left for the product selected.\n\nPlease select another of finish the transaction.");
+                    }
+                    else Console.WriteLine("You currently don't have enough balance to make that purchase\n\nSelect another product or finish transaction.");
                 }
-                Console.ReadKey();
-                Console.Clear();
+                else Console.WriteLine("Transaction finished. Continue to see details...");
+                Utils.EndMethod();
             } while (option != 0);
 
-            Console.WriteLine(transaction.IsSalePossible);
+            Transaction.FinishTransaction(purchaseList, initialBalance);
 
         }
 
@@ -113,22 +120,10 @@ namespace EJ01
             {
                 if (i % 4 == 0)
                     Console.WriteLine();
-                Console.Write($"{Lines[i]}\t");
+                Console.Write($"({i + 1}) {Lines[i]}\t");
             }
         }
 
-        //public void CompleteTransaction(decimal funds)
-        //{
-        //    Console.WriteLine("Items selected: ");
-        //    foreach (int i in selectedItems.Distinct())
-        //        Console.WriteLine($"{stock.products[i].GetName()} ({selectedItems.FindAll(p => p.Equals(i)).Count}): {selectedItems.FindAll(p => p.Equals(i)).Count * stock.products[i].GetPrice():f2}$");
-        //    if (funds == 0)
-        //        Console.WriteLine("No balance introduced.");
-        //    else if (funds > amountedSale)
-        //        Console.WriteLine($"\nTotal cost of items selected: {amountedSale}$\nAmount to be returned: {funds - amountedSale:f2}$");
-        //    else
-        //        Console.WriteLine($"\nTotal cost of items selected: {amountedSale}$\nNot enough balance. Missing: {amountedSale - funds:f2}$");
-        //}
         public void GenerateVendingMachineStock()
         {
             Lines = new List<Line>
