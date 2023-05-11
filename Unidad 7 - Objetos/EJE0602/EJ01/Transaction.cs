@@ -6,22 +6,32 @@ using System.Threading.Tasks;
 
 namespace EJ01
 {
-    internal abstract class Transaction
+    internal class Transaction
     {
-        public decimal GetMoneyIntroduced() => moneyIntroduced;
-
-        public void SetMoneyIntroduced(decimal moneyIntroduced)
+        public static bool IsSalePossible(List<Product> productList, decimal balance)
         {
-            this.moneyIntroduced = moneyIntroduced;
+            if (productList.Sum(x => x.GetPrice()) > balance)
+                return false;
+            else
+                return true;
         }
 
-        public bool IsSalePossible()
+        public static void FinishTransaction(List<Product> productList, decimal balance)
         {
-            if(selectedProducts.Count > 0)
-                totalSale += selectedProducts.Last().GetPrice();
-            return true;
+
         }
 
-        
+        public void CompleteTransaction(decimal funds)
+        {
+            Console.WriteLine("Items selected: ");
+            foreach (int i in selectedItems.Distinct())
+                Console.WriteLine($"{stock.products[i].GetName()} ({selectedItems.FindAll(p => p.Equals(i)).Count}): {selectedItems.FindAll(p => p.Equals(i)).Count * stock.products[i].GetPrice():f2}$");
+            if (funds == 0)
+                Console.WriteLine("No initialBalance introduced.");
+            else if (funds > amountedSale)
+                Console.WriteLine($"\nTotal cost of items selected: {amountedSale}$\nAmount to be returned: {funds - amountedSale:f2}$");
+            else
+                Console.WriteLine($"\nTotal cost of items selected: {amountedSale}$\nNot enough initialBalance. Missing: {amountedSale - funds:f2}$");
+        }
     }
 }
