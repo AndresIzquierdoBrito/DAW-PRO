@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EJ01
 {
-    internal class Utils
+    internal abstract class Utils
     {
         public static decimal IntroduceMoney()
         {

@@ -103,6 +103,7 @@ namespace EJ01
             } while (option != 0);
 
             Console.WriteLine(transaction.IsSalePossible);
+
         }
 
         public void ShowStock()

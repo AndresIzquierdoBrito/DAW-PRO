@@ -6,19 +6,8 @@ using System.Threading.Tasks;
 
 namespace EJ01
 {
-    internal class Transaction
+    internal abstract class Transaction
     {
-        private decimal moneyIntroduced { get; set; }
-
-        private decimal totalSale;
-
-        public List<Product> selectedProducts = new();
-
-        public Transaction(decimal moneyIntroduced)
-        {
-            SetMoneyIntroduced(moneyIntroduced);
-        }
-
         public decimal GetMoneyIntroduced() => moneyIntroduced;
 
         public void SetMoneyIntroduced(decimal moneyIntroduced)
@@ -32,5 +21,7 @@ namespace EJ01
                 totalSale += selectedProducts.Last().GetPrice();
             return true;
         }
+
+        
     }
 }
