@@ -9,6 +9,7 @@ namespace EJ01
             VendingMachine vendingMachine = new(10, 2);
             vendingMachine.GenerateVendingMachineStock();
             int menuOption;
+
             do
             {
                 Console.Write("---------------- VENDING MACHINE MANAGER--------------------\n\t1. Sell product.\n\t2. Refill vending machine.\n\t3. Show stock.\n\t4. Make purchase.\n\t0. Quit.\n\nSelect an option");
