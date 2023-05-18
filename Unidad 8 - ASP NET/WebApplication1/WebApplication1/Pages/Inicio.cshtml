@@ -1,0 +1,70 @@
+﻿@page
+@model WebApplication1.Pages.InicioModel
+@{
+}
+
+<!Doctype html>
+<html>
+    <head>
+        <title>TestTest</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+            }
+            html{background-color:teal}
+            div {
+                background-color:darkblue;
+                height: 7rem;    
+            }
+            h1, p, li {color:white;
+                   margin: 3rem; }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <h1>This is my header</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas lacus at venenatis ultrices. Morbi vulputate dolor vitae mattis gravida. Morbi quis rhoncus nulla. Suspendisse ornare turpis vel sem pharetra, at vulputate enim cursus. Morbi vel dolor eget ex mollis ultricies. Mauris sit amet eleifend sem, et dictum elit. Curabitur vestibulum nisi nulla, id ultricies libero placerat sed. Nullam condimentum, lacus in porta ornare, enim tellus efficitur sapien, consectetur auctor tellus ligula ut leo. Nulla facilisi. Duis convallis erat in ante venenatis, venenatis sollicitudin tortor maximus. In tempus vitae velit ac finibus. Phasellus rhoncus ante tellus, blandit gravida justo elementum eu. Praesent tincidunt lorem ac libero iaculis, ut imperdiet felis venenatis. Etiam mattis pulvinar tortor, vel elementum nisi ullamcorper ut.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas lacus at venenatis ultrices. Morbi vulputate dolor vitae mattis gravida. Morbi quis rhoncus nulla. Suspendisse ornare turpis vel sem pharetra, at vulputate enim cursus. Morbi vel dolor eget ex mollis ultricies. Mauris sit amet eleifend sem, et dictum elit. Curabitur vestibulum nisi nulla, id ultricies libero placerat sed. Nullam condimentum, lacus in porta ornare, enim tellus efficitur sapien, consectetur auctor tellus ligula ut leo. Nulla facilisi. Duis convallis erat in ante venenatis, venenatis sollicitudin tortor maximus. In tempus vitae velit ac finibus. Phasellus rhoncus ante tellus, blandit gravida justo elementum eu. Praesent tincidunt lorem ac libero iaculis, ut imperdiet felis venenatis. Etiam mattis pulvinar tortor, vel elementum nisi ullamcorper ut.
+    </p>
+    <ul>
+        <li>This is the first item of a list.</li>
+        <li>And the second.</li>
+        <li>And the third.</li>
+        @{
+            decimal num1 = 10, num2 = 5, result;
+            result = num1 / num2;
+        }
+        <li>The division between @num1 and @num2 is @result</li>
+    </ul>
+    @{
+        List<string> Juegos = new()
+        {
+            "Tetris",
+            "Lemmings",
+            "Pac-Man",
+            "Pong",
+            "Space Invaders"
+        };
+        List<decimal> Precio = new()
+        {
+            12.33m,
+            3m,
+            4.99m,
+            6m,
+            34m
+        };
+    }
+    <p>
+        @{
+            for(int i = 0; i < Juegos.Count; i++)
+            {
+                <span>@Juegos[i]</span>  <span>@Precio[i]</span><br />
+            }
+        }
+    </p>
+    </body>
+</html>
