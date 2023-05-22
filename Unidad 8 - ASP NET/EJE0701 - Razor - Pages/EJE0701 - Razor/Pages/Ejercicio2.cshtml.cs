@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication1.Pages
+namespace EJE0701___Razor.Pages
 {
-    public class InicioModel : PageModel
+    [IgnoreAntiforgeryToken(Order = 1001)]
+    public class Ejercicio2Model : PageModel
     {
         public void OnGet()
         {

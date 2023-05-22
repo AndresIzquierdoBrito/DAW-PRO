@@ -1,0 +1,90 @@
+﻿@page
+@using System.Text.RegularExpressions;
+@model EJE0701___Razor.Pages.Ejercicio2Model
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJE2</title>
+    <link rel="stylesheet" href="./css/StyleSheet.css" />
+</head>
+<body>
+    <header>
+        <img src="./media/me.jpeg">
+        <a href="/"><h1>Andrés Izquierdo</h1></a>
+        <h2>1º Desarrollo de Aplicaciones Web A</h2>
+    </header>
+    <div class="flex-main">
+        <main>
+            <h2>Cuenta palabras</h2>
+            <form name="formEj2" method="post">
+                @if (Request.Method == "POST")
+                {
+                    string text, word;
+                    if (!String.IsNullOrEmpty(Request.Form["textInserted"]) && !String.IsNullOrEmpty(word = Request.Form["wordToFind"]))
+                    {
+                        text = Request.Form["textInserted"];
+                        word = Request.Form["wordToFind"];
+                        string pattern = @"\b" + Regex.Escape(word.ToLower()) + @"\b";
+
+                        int amount = Regex.Matches(text.ToLower(), pattern).Count;
+                        //Regex test = new Regex()
+                        <p class="wrappingParagraph"><span>Texto:</span> @text</p>
+                        <p><span>Palabra:</span> @word</p>
+
+                        if (amount == 1)
+                        {
+                            <p>La palabra <span>"@word"</span> aparece <span>@amount</span> vez.</p>
+                        }
+                        else if (amount > 1)
+                        {
+                            <p>La palabra <span>"@word"</span> aparece <span>@amount</span> veces.</p>
+                        }
+                        else
+                        {
+                            <p>La palabra <span>"@word"</span> no aparece en el texto.</p>
+                        }
+                    }
+                    else
+                    {
+                        <p>Los valores introducidos no pueden estar vacios.</p>
+                    }
+
+                }
+                else
+                {
+                    <p>
+                        <label for="text">Texto: </label>
+                    </p>
+                    <p>
+                        <textarea id="textarea" name="textInserted" rows="8" cols="50" required></textarea>
+
+                    </p>
+                    <p>
+                        <label for="num1">Palabra: </label>
+                        <input type="text" name="wordToFind" required />
+                    </p>
+                    <p><input type="submit" class="submitButton" value="Cuenta" /></p>
+                }
+            </form>
+        </main>
+        <aside>
+            <a href="Ejercicio1">Ejercicio 1</a>
+            <a href="Ejercicio2">Ejercicio 2</a>
+            <a href="Ejercicio3">Ejercicio 3</a>
+            <a href="Ejercicio4">Ejercicio 4</a>
+            <a href="Index">Principal</a>
+        </aside>
+    </div>
+    <footer>
+        <p>23 de Mayo 2023</p>
+        <p>CIFP César Manrique</p>
+        <p>Andrés Eduardo Izquierdo Brito</p>
+        <p>Curso 2022 - 2023</p>
+    </footer>
+</body>
+</html>

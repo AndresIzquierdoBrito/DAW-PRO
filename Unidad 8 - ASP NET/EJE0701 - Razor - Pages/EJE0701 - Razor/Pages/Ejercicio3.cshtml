@@ -1,0 +1,69 @@
+﻿@page
+@model EJE0701___Razor.Pages.Ejercicio3Model
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJE3</title>
+    <link rel="stylesheet" href="./css/StyleSheet.css" />
+</head>
+<body>
+    <header>
+        <img src="./media/me.jpeg">
+        <a href="/"><h1>Andrés Izquierdo</h1></a>
+        <h2>1º Desarrollo de Aplicaciones Web A</h2>
+    </header>
+    <div class="flex-main">
+        <main>
+            <h2>Calculadora de días transcurridos</h2>
+            <form name="formEj3" method="post">
+
+                @if (Request.Method == "POST")
+                {
+                    DateTime currentTime = DateTime.Now;
+                    if (DateTime.TryParse(Request.Form["dateintroduced"], out DateTime date) && date.CompareTo(currentTime) < 0 && date.Day != DateTime.Now.Day)
+                    {
+                        <p>Fecha de hoy: <span>@currentTime.ToShortDateString()</span></p>
+                        <p>Fecha introducida: <span>@date.ToShortDateString()</span></p>
+                        <p>Días entre la fecha introducida y el día de hoy: <span>@date.Subtract(currentTime).Days.ToString().Substring(1) días</span></p>
+                    }
+                    else
+                    {
+                        <p>
+                            <label for="dateIntroduced">Introduce la fecha deseada:</label>
+                            <input type="date" name="dateIntroduced" required />
+                        </p>
+                        <p><input type="submit" class="submitButton" value="Calcular" /></p>
+                        <p>Introducción de fecha inválida.</p>
+                    }
+                }
+                else
+                {
+                    <p>
+                        <label for="dateIntroduced">Introduce la fecha deseada:</label>
+                        <input type="date" name="dateIntroduced" required />
+                    </p>
+                    <p><input type="submit" class="submitButton" value="Calcular" /></p>
+                }
+            </form>
+        </main>
+        <aside>
+            <a href="Ejercicio1">Ejercicio 1</a>
+            <a href="Ejercicio2">Ejercicio 2</a>
+            <a href="Ejercicio3">Ejercicio 3</a>
+            <a href="Ejercicio4">Ejercicio 4</a>
+            <a href="Index">Principal</a>
+        </aside>
+    </div>
+    <footer>
+        <p>23 de Mayo 2023</p>
+        <p>CIFP César Manrique</p>
+        <p>Andrés Eduardo Izquierdo Brito</p>
+        <p>Curso 2022 - 2023</p>
+    </footer>
+</body>
+</html>

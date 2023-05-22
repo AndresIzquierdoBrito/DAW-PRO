@@ -1,0 +1,119 @@
+﻿@page
+@model EJE0701___Razor.Pages.Ejercicio4Model
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJE4</title>
+    <link rel="stylesheet" href="./css/StyleSheet.css" />
+</head>
+<body>
+    <header>
+        <img src="./media/me.jpeg">
+        <a href="/"><h1>Andrés Izquierdo</h1></a>
+        <h2>1º Desarrollo de Aplicaciones Web A</h2>
+    </header>
+    <div class="flex-main">
+        <main>
+            <h2>Selección de números</h2>
+            <form name="formEje4" method="post">
+
+                @if (Request.Method == "POST")
+                {
+                    <div class="numerInputs">
+                        <p class="numRow">
+                            <label for="num1">Número 1: </label>
+                            <input type="number" name="num1" value="@Request.Form["num1"]" required />
+                            <input type="checkbox" id="num1Checkbox" name="num1Checkbox" @(Request.Form["num1Checkbox"] == "on" ? "checked" : "") />
+                        </p>
+                        <p class="numRow">
+                            <label for="num2">Número 2: </label>
+                            <input type="number" name="num2" value="@Request.Form["num2"]" required />
+                            <input type="checkbox" id="num2Checkbox" name="num2Checkbox" @(Request.Form["num2Checkbox"] == "on" ? "checked" : "") />
+                        </p>
+                        <p class="numRow">
+                            <label for="num3">Número 3: </label>
+                            <input type="number" name="num3" value="@Request.Form["num3"]" required />
+                            <input type="checkbox" id="num3Checkbox" name="num3Checkbox" @(Request.Form["num3Checkbox"] == "on" ? "checked" : "") />
+                        </p>
+                        <p class="numRow">
+                            <label for="num4">Número 4: </label>
+                            <input type="number" name="num4" value="@Request.Form["num4"]" required />
+                            <input type="checkbox" id="num4Checkbox" name="num4Checkbox" @(Request.Form["num4Checkbox"] == "on" ? "checked" : "") />
+                        </p>
+
+                    </div>
+                    <div class="radioButtons">
+                        <p>
+                            <input type="radio" id="sumar" name="option" value="sumar" @(Request.Form["option"] == "sumar" ? "checked" : "") />
+                            <label for="sumar">Sumar</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="multiplicar" name="option" value="multiplicar" @(Request.Form["option"] == "multiplicar" ? "checked" : "") />
+                            <label for="multiplicar">Multiplicar</label>
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <div class="numerInputs">
+                        <p class="numRow">
+                            <label for="num1">Número 1: </label>
+                            <input type="number" name="num1" required />
+                            <input type="checkbox" id="num1Checkbox" name="num1Checkbox" />
+                        </p>
+                        <p class="numRow">
+                            <label for="num2">Número 2: </label>
+                            <input type="number" name="num2" required />
+                            <input type="checkbox" id="num2Checkbox" name="num2Checkbox" />
+                        </p>
+                        <p class="numRow">
+                            <label for="num3">Número 3: </label>
+                            <input type="number" name="num3" required />
+                            <input type="checkbox" id="num3Checkbox" name="num3Checkbox" />
+                        </p>
+                        <p class="numRow">
+                            <label for="num4">Número 4: </label>
+                            <input type="number" name="num4" required />
+                            <input type="checkbox" id="num4Checkbox" name="num4Checkbox" />
+                        </p>
+                    </div>
+                    <div class="radioButtons">
+                        <p>
+                            <input type="radio" id="sumar" name="option" value="sumar" />
+                            <label for="sumar">Sumar</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="multiplicar" name="option" value="multiplicar" />
+                            <label for="multiplicar">Multiplicar</label>
+                        </p>
+                    </div>
+                }
+                <p><input type="submit" class="submitButton" value="Ejecutar" /></p>
+            </form>
+
+            <form name="clearValues" method="get">
+                <p><input type="submit" class="submitButton" value="Limpiar" /></p>
+
+            </form>
+        </main>
+        <aside>
+            <a href="Ejercicio1">Ejercicio 1</a>
+            <a href="Ejercicio2">Ejercicio 2</a>
+            <a href="Ejercicio3">Ejercicio 3</a>
+            <a href="Ejercicio4">Ejercicio 4</a>
+            <a href="Index">Principal</a>
+        </aside>
+    </div>
+    <footer>
+        <p>23 de Mayo 2023</p>
+        <p>CIFP César Manrique</p>
+        <p>Andrés Eduardo Izquierdo Brito</p>
+        <p>Curso 2022 - 2023</p>
+    </footer>
+</body>
+</html>

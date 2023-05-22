@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{F4C2FE8A-8F50-4A74-B7FA-700B5080441B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EJE0701 - Razor - Pages", "EJE0701 - Razor\EJE0701 - Razor - Pages.csproj", "{4D474AD4-7E0D-4CBC-9DC2-87E32E589BBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4C2FE8A-8F50-4A74-B7FA-700B5080441B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4C2FE8A-8F50-4A74-B7FA-700B5080441B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4C2FE8A-8F50-4A74-B7FA-700B5080441B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4C2FE8A-8F50-4A74-B7FA-700B5080441B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D474AD4-7E0D-4CBC-9DC2-87E32E589BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D474AD4-7E0D-4CBC-9DC2-87E32E589BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D474AD4-7E0D-4CBC-9DC2-87E32E589BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D474AD4-7E0D-4CBC-9DC2-87E32E589BBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {46357646-DBCE-4381-9280-C588CB33997B}
+		SolutionGuid = {340E6A52-BEE6-40B6-B83D-51F1BA241240}
 	EndGlobalSection
 EndGlobal
