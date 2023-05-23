@@ -3,7 +3,6 @@
 @model EJE0701___Razor.Pages.IndexModel
 
 @{
-    string exe = Request.Query["exe"];
 }
 
 <!DOCTYPE html>
@@ -22,7 +21,10 @@
     </header>
     <div class="flex-main">
         <main>
+
             @{
+                string exe = Request.Query["exe"];
+
                 switch (exe)
                 {
                     case "1":
@@ -73,7 +75,6 @@
                             <p><input type="submit" class="submitButton" value="Calcular" /></p>
 
                         </form>
-
                         break;
 
                     case "2":
@@ -128,7 +129,6 @@
                                 <p><input type="submit" class="submitButton" value="Cuenta" /></p>
                             }
                         </form>
-
                         break;
 
                     case "3":
@@ -159,9 +159,11 @@
                             }
                         </form>
                         break;
+
                     case "4":
                         <p>Ejer 4</p>
                         break;
+
                     default:
                         <h2>Ejercicio 1</h2>
                         <h3>Cálculo de números</h3>

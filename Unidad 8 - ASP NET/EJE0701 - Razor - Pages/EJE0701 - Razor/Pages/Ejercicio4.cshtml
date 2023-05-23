@@ -27,12 +27,12 @@
                     <div class="numerInputs">
                         <p class="numRow">
                             <label for="num1">Número 1: </label>
-                            <input type="number" name="num1" value="@Request.Form["num1"]" required />
+                            <input type="number" id="num1" name="num1" value="@Request.Form["num1"]" required />
                             <input type="checkbox" id="num1Checkbox" name="num1Checkbox" @(Request.Form["num1Checkbox"] == "on" ? "checked" : "") />
                         </p>
                         <p class="numRow">
                             <label for="num2">Número 2: </label>
-                            <input type="number" name="num2" value="@Request.Form["num2"]" required />
+                            <input type="number" id="num2" name="num2" value="@Request.Form["num2"]" required />
                             <input type="checkbox" id="num2Checkbox" name="num2Checkbox" @(Request.Form["num2Checkbox"] == "on" ? "checked" : "") />
                         </p>
                         <p class="numRow">
@@ -42,7 +42,7 @@
                         </p>
                         <p class="numRow">
                             <label for="num4">Número 4: </label>
-                            <input type="number" name="num4" value="@Request.Form["num4"]" required />
+                            <input type="number" id="num4" name="num4" value="@Request.Form["num4"]" required />
                             <input type="checkbox" id="num4Checkbox" name="num4Checkbox" @(Request.Form["num4Checkbox"] == "on" ? "checked" : "") />
                         </p>
 
@@ -63,22 +63,22 @@
                     <div class="numerInputs">
                         <p class="numRow">
                             <label for="num1">Número 1: </label>
-                            <input type="number" name="num1" required />
+                            <input type="number" id="num1" name="num1" required />
                             <input type="checkbox" id="num1Checkbox" name="num1Checkbox" />
                         </p>
                         <p class="numRow">
                             <label for="num2">Número 2: </label>
-                            <input type="number" name="num2" required />
+                            <input type="number" id="num2" name="num2" required />
                             <input type="checkbox" id="num2Checkbox" name="num2Checkbox" />
                         </p>
                         <p class="numRow">
                             <label for="num3">Número 3: </label>
-                            <input type="number" name="num3" required />
+                            <input type="number" id="num3" name="num3" required />
                             <input type="checkbox" id="num3Checkbox" name="num3Checkbox" />
                         </p>
                         <p class="numRow">
                             <label for="num4">Número 4: </label>
-                            <input type="number" name="num4" required />
+                            <input type="number" id="num4" name="num4" required />
                             <input type="checkbox" id="num4Checkbox" name="num4Checkbox" />
                         </p>
                     </div>
