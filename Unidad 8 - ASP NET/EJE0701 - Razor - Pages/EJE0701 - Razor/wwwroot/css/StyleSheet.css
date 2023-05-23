@@ -137,6 +137,42 @@ form[name="formEj2"] span, form[name="formEj3"] span {
 	font-weight: bold;
 	color: #7729CB;
 	font-size: 1.2em;
+	display: inline-block;
+}
+form[name="formEj4"]{
+	position: relative;
+}
+.numberInputs {
+	width: 50%;
+	display: inline-block;
+}
+.numRow label {
+	color: #7729CB;
+	font-weight: bold;
+}
+
+.radioButtons {
+	display: inline-block;
+	position: relative;
+	bottom: 3vw;
+}
+.results {
+	border: 3px solid #8C45D9;
+	border-radius: 1.5em;
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	padding: 1em 2em;
+	bottom: 0;
+	right: 0;
+	margin: 0 4vw 5vh 0;
+}
+
+.resultParragraph {
+	position: absolute;
+	margin-right: 3vw;
+	bottom: 0;
+	right: 0;
 }
 aside {
 	background-color: #8C45D9;
@@ -149,6 +185,11 @@ aside {
 	align-items: center;
 	border-radius: 1.5rem;
 	box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.buttonPos {
+	position: relative;
+	left: 6.5vw;
+	bottom: 4.9vh;
 }
 aside a{
   color: #8C45D9;

@@ -24,7 +24,7 @@
 
                 @if (Request.Method == "POST")
                 {
-                    <div class="numerInputs">
+                    <div class="numberInputs">
                         <p class="numRow">
                             <label for="num1">Número 1: </label>
                             <input type="number" id="num1" name="num1" value="@Request.Form["num1"]" required />
@@ -49,7 +49,7 @@
                     </div>
                     <div class="radioButtons">
                         <p>
-                            <input type="radio" id="sumar" name="option" value="sumar" @(Request.Form["option"] == "sumar" ? "checked" : "") />
+                            <input type="radio" id="sumar" name="option" value="sumar" required @(Request.Form["option"] == "sumar" ? "checked" : "") />
                             <label for="sumar">Sumar</label>
                         </p>
                         <p>
@@ -57,10 +57,58 @@
                             <label for="multiplicar">Multiplicar</label>
                         </p>
                     </div>
+                    <div class="results">
+                        @{
+                            decimal num1, num2, num3, num4;
+                            List<decimal> operatingNumbers = new();
+                            if (!String.IsNullOrEmpty(@Request.Form["num1"]) && Request.Form["num1Checkbox"] == "on")
+                            {
+                                if (decimal.TryParse(@Request.Form["num1"], out num1))
+                                {
+                                    operatingNumbers.Add(num1);
+                                    <p>Número 1: <span>@num1</span></p>
+                                }
+                            }
+                            if (!String.IsNullOrEmpty(@Request.Form["num2"]) && Request.Form["num2Checkbox"] == "on")
+                            {
+                                if (decimal.TryParse(@Request.Form["num2"], out num2))
+                                {
+                                    operatingNumbers.Add(num2);
+                                    <p>Número 2: <span>@num2</span></p>
+                                }
+                            }
+                            if (!String.IsNullOrEmpty(@Request.Form["num3"]) && Request.Form["num3Checkbox"] == "on")
+                            {
+                                if (decimal.TryParse(@Request.Form["num3"], out num3))
+                                {
+                                    operatingNumbers.Add(num3);
+                                    <p>Número 3: <span>@num3</span></p>
+                                }
+                            }
+                            if (!String.IsNullOrEmpty(@Request.Form["num4"]) && Request.Form["num4Checkbox"] == "on")
+                            {
+                                if (decimal.TryParse(@Request.Form["num4"], out num4))
+                                {
+                                    operatingNumbers.Add(num4);
+                                    <p>Número 4: <span>@num4</span></p>
+
+                                }
+                            }
+
+                            if (@Request.Form["option"] == "sumar")
+                            {
+                                <p class="resultParragraph">Su suma da: <span class="resultNumb">@operatingNumbers.Sum()</span> </p>
+                            }
+                            else if (@Request.Form["option"] == "multiplicar")
+                            {
+                                <p class="resultParragraph">Su multiplicación da: <span class="resultNumb">@operatingNumbers.Aggregate((x, y) => x * y)</span></p>
+                            }
+                        }
+                    </div>
                 }
                 else
                 {
-                    <div class="numerInputs">
+                    <div class="numberInputs">
                         <p class="numRow">
                             <label for="num1">Número 1: </label>
                             <input type="number" id="num1" name="num1" required />
@@ -84,7 +132,7 @@
                     </div>
                     <div class="radioButtons">
                         <p>
-                            <input type="radio" id="sumar" name="option" value="sumar" />
+                            <input type="radio" id="sumar" name="option" value="sumar" required/>
                             <label for="sumar">Sumar</label>
                         </p>
                         <p>
@@ -93,12 +141,11 @@
                         </p>
                     </div>
                 }
-                <p><input type="submit" class="submitButton" value="Ejecutar" /></p>
+                <br/><input type="submit" class="submitButton" value="Ejecutar" />
             </form>
 
             <form name="clearValues" method="get">
-                <p><input type="submit" class="submitButton" value="Limpiar" /></p>
-
+                <input type="submit" class="submitButton buttonPos" value="Limpiar" />
             </form>
         </main>
         <aside>
