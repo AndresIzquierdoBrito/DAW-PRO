@@ -1,0 +1,58 @@
+﻿@page
+@using System.Text.RegularExpressions
+@model EJ07_Views.Pages.Exercises.Pages_Exercises_Ejercicio2
+@{
+    ViewData["Title"] = "Ejercicio 2 - EJ0701";
+}
+
+<h2>Cuenta palabras</h2>
+<form name="formEj2" method="post">
+    @if (Request.Method == "POST")
+    {
+        string text, word;
+        if (!String.IsNullOrEmpty(Request.Form["textInserted"]) && !String.IsNullOrEmpty(word = Request.Form["wordToFind"]))
+        {
+            text = Request.Form["textInserted"];
+            word = Request.Form["wordToFind"];
+            string pattern = @"\b" + Regex.Escape(word.ToLower()) + @"\b";
+
+            int amount = Regex.Matches(text.ToLower(), pattern).Count;
+            //Regex test = new Regex()
+            <p class="wrappingParagraph"><span>Texto:</span> @text</p>
+            <p><span>Palabra:</span> @word</p>
+
+            if (amount == 1)
+            {
+                <p>La palabra <span>"@word"</span> aparece <span>@amount</span> vez.</p>
+            }
+            else if (amount > 1)
+            {
+                <p>La palabra <span>"@word"</span> aparece <span>@amount</span> veces.</p>
+            }
+            else
+            {
+                <p>La palabra <span>"@word"</span> no aparece en el texto.</p>
+            }
+        }
+        else
+        {
+            <p>Los valores introducidos no pueden estar vacios.</p>
+        }
+
+    }
+    else
+    {
+        <p>
+            <label for="text">Texto: </label>
+        </p>
+        <p>
+            <textarea id="textarea" name="textInserted" rows="8" cols="50" required></textarea>
+
+        </p>
+        <p>
+            <label for="num1">Palabra: </label>
+            <input type="text" name="wordToFind" required />
+        </p>
+        <p><input type="submit" class="submitButton" value="Cuenta" /></p>
+    }
+</form>

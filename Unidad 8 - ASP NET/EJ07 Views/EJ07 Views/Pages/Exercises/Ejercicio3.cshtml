@@ -1,0 +1,37 @@
+﻿@page
+@model EJ07_Views.Pages.Exercises.Pages_Exercises_Ejercicio3
+@{
+    ViewData["Title"] = "Ejercicio 3 - EJ0701";
+}
+
+<h2>Calculadora de días transcurridos</h2>
+<form name="formEj3" method="post">
+
+    @if (Request.Method == "POST")
+    {
+        DateTime currentTime = DateTime.Now;
+        if (DateTime.TryParse(Request.Form["dateintroduced"], out DateTime date) && date.CompareTo(currentTime) < 0 && date.Day != DateTime.Now.Day)
+        {
+            <p>Fecha de hoy: <span>@currentTime.ToShortDateString()</span></p>
+            <p>Fecha introducida: <span>@date.ToShortDateString()</span></p>
+            <p>Días entre la fecha introducida y el día de hoy:  <span>@((currentTime - date).Days) días</span></p>
+        }
+        else
+        {
+            <p>
+                <label for="dateIntroduced">Introduce la fecha deseada:</label>
+                <input type="date" name="dateIntroduced" required />
+            </p>
+            <p><input type="submit" class="submitButton" value="Calcular" /></p>
+            <p>Introducción de fecha inválida.</p>
+        }
+    }
+    else
+    {
+        <p>
+            <label for="dateIntroduced">Introduce la fecha deseada:</label>
+            <input type="date" name="dateIntroduced" required />
+        </p>
+        <p><input type="submit" class="submitButton" value="Calcular" /></p>
+    }
+</form>
