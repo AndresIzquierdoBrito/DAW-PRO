@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EJ07_Views</title>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" />
+    <link rel="icon" type="image/x-icon" href="/circle.ico"/>
+</head>
+<body>
+    <header>
+        <img src="~/media/me.jpeg">
+        <a href="/"><h1>Andrés Izquierdo</h1></a>
+        <h2>1º Desarrollo de Aplicaciones Web A</h2>
+    </header>
+    <div class="flex-main">
+        <main>
+            @RenderBody()
+        </main>
+        <aside>
+            <a href="/Exercises/Ejercicio1">Ejercicio 1</a>
+            <a href="/Exercises/Ejercicio2">Ejercicio 2</a>
+            <a href="/Exercises/Ejercicio3">Ejercicio 3</a>
+            <a href="/Exercises/Ejercicio4">Ejercicio 4</a>
+            <a href="/Exercises/Ejercicio5">Ejercicio 5</a>
+            <a href="/Exercises/Ejercicio6">Ejercicio 6</a>
+            <a href="/Exercises/Ejercicio7">Ejercicio 7</a>
+            <a href="/">Principal</a>
+        </aside>
+    </div>
+    <footer>
+        <p>23 de Mayo 2023</p>
+        <p>CIFP César Manrique</p>
+        <p>Andrés Eduardo Izquierdo Brito</p>
+        <p>Curso 2022 - 2023</p>
+    </footer>
+</body>
+</html>

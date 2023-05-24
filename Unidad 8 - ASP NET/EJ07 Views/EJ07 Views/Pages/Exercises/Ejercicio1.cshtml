@@ -1,0 +1,52 @@
+﻿@page
+@model EJ07_Views.Pages.Exercises.Pages_Exercises_Ejercicio1
+@{
+    ViewData["Title"] = "Ejercicio 1 - EJ0701";
+}
+
+<h2>Cálculo de números</h2>
+<form name="formEje1" method="post">
+    @if (Request.Method == "POST")
+    {
+        <p>
+            <label for="num1">Primer número: </label>
+            <input type="number" class="numberBox" name="num1" value=@Request.Form["num1"] required />
+        </p>
+        <p>
+            <label for="num1">Segundo número: </label>
+            <input type="number" class="numberBox" name="num2" value=@Request.Form["num2"] required />
+        </p>
+
+        decimal num1, num2;
+        if (decimal.TryParse(Request.Form["num1"], out num1) && decimal.TryParse(Request.Form["num2"], out num2))
+        {
+            <div class="cajaResultado">
+                <p class="textBolded">Suma:</p>
+                <p>@num1 <span class="sign">+</span> @num2 = <span class="resultNumb">@(num1 + num2)</span></p>
+                <p class="textBolded">Resta:</p>
+                <p>@num1 <span class="sign">-</span> @num2 = <span class="resultNumb">@(num1 - num2)</span></p>
+                <p class="textBolded">Multiplicación:</p>
+                <p>@num1 <span class="sign">*</span> @num2 = <span class="resultNumb">@(num1 * num2)</span></p>
+                <p class="textBolded">División:</p>
+                <p>@num1 <span class="sign">/</span> @num2 = <span class="resultNumb">@(Math.Round(num1 / num2, 3).ToString("0.###"))</span></p>
+
+            </div>
+        }
+        else
+        {
+            <p><span class="errorMssg">Error:</span>Introduce los datos correctamente: dos valores numéricos.</p>
+        }
+    }
+    else
+    {
+        <p>
+            <label for="num1">Primer número: </label>
+            <input type="number" class="numberBox" name="num1" required />
+        </p>
+        <p>
+            <label for="num1">Segundo número: </label>
+            <input type="number" class="numberBox" name="num2" required />
+        </p>
+    }
+    <p><input type="submit" class="submitButton" value="Calcular" /></p>
+</form>
