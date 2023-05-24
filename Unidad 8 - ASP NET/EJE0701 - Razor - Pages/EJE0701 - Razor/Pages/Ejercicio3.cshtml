@@ -29,13 +29,14 @@
                     {
                         <p>Fecha de hoy: <span>@currentTime.ToShortDateString()</span></p>
                         <p>Fecha introducida: <span>@date.ToShortDateString()</span></p>
-                        <p>Días entre la fecha introducida y el día de hoy: <span>@date.Subtract(currentTime).Days.ToString().Substring(1) días</span></p>
+                        <p>Días entre la fecha introducida y el día de hoy:  <span>@date.Subtract(currentTime).Days.ToString().Substring(1) días</span></p>
+                        <p>Días entre la fecha introducida y el día de hoy:  <span>@((currentTime - date).Days) días</span></p>
                     }
                     else
                     {
                         <p>
                             <label for="dateIntroduced">Introduce la fecha deseada:</label>
-                            <input type="date" name="dateIntroduced" required />
+                            <input type="text" name="dateIntroduced" required />
                         </p>
                         <p><input type="submit" class="submitButton" value="Calcular" /></p>
                         <p>Introducción de fecha inválida.</p>
@@ -45,7 +46,7 @@
                 {
                     <p>
                         <label for="dateIntroduced">Introduce la fecha deseada:</label>
-                        <input type="date" name="dateIntroduced" required />
+                        <input type="text" name="dateIntroduced" required />
                     </p>
                     <p><input type="submit" class="submitButton" value="Calcular" /></p>
                 }

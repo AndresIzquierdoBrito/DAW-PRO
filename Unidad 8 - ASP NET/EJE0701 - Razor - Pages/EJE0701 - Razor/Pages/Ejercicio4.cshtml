@@ -27,22 +27,22 @@
                     <div class="numberInputs">
                         <p class="numRow">
                             <label for="num1">Número 1: </label>
-                            <input type="number" id="num1" name="num1" value="@Request.Form["num1"]" required />
+                            <input type="number" id="num1" step="any" name="num1" value="@Request.Form["num1"]" />
                             <input type="checkbox" id="num1Checkbox" name="num1Checkbox" @(Request.Form["num1Checkbox"] == "on" ? "checked" : "") />
                         </p>
                         <p class="numRow">
                             <label for="num2">Número 2: </label>
-                            <input type="number" id="num2" name="num2" value="@Request.Form["num2"]" required />
+                            <input type="number" id="num2" step="any" name="num2" value="@Request.Form["num2"]" />
                             <input type="checkbox" id="num2Checkbox" name="num2Checkbox" @(Request.Form["num2Checkbox"] == "on" ? "checked" : "") />
                         </p>
                         <p class="numRow">
                             <label for="num3">Número 3: </label>
-                            <input type="number" name="num3" value="@Request.Form["num3"]" required />
+                            <input type="number" name="num3" step="any" value="@Request.Form["num3"]" />
                             <input type="checkbox" id="num3Checkbox" name="num3Checkbox" @(Request.Form["num3Checkbox"] == "on" ? "checked" : "") />
                         </p>
                         <p class="numRow">
                             <label for="num4">Número 4: </label>
-                            <input type="number" id="num4" name="num4" value="@Request.Form["num4"]" required />
+                            <input type="number" id="num4" step="any" name="num4" value="@Request.Form["num4"]" />
                             <input type="checkbox" id="num4Checkbox" name="num4Checkbox" @(Request.Form["num4Checkbox"] == "on" ? "checked" : "") />
                         </p>
 
@@ -61,38 +61,26 @@
                         @{
                             decimal num1, num2, num3, num4;
                             List<decimal> operatingNumbers = new();
-                            if (!String.IsNullOrEmpty(@Request.Form["num1"]) && Request.Form["num1Checkbox"] == "on")
+                            if (!String.IsNullOrEmpty(@Request.Form["num1"]) && Request.Form["num1Checkbox"] == "on" && decimal.TryParse(@Request.Form["num1"], out num1))
                             {
-                                if (decimal.TryParse(@Request.Form["num1"], out num1))
-                                {
-                                    operatingNumbers.Add(num1);
-                                    <p>Número 1: <span>@num1</span></p>
-                                }
+                                operatingNumbers.Add(num1);
+                                <p>Número 1: <span>@num1</span></p>
                             }
-                            if (!String.IsNullOrEmpty(@Request.Form["num2"]) && Request.Form["num2Checkbox"] == "on")
+                            if (!String.IsNullOrEmpty(@Request.Form["num2"]) && Request.Form["num2Checkbox"] == "on" && decimal.TryParse(@Request.Form["num2"], out num2))
                             {
-                                if (decimal.TryParse(@Request.Form["num2"], out num2))
-                                {
-                                    operatingNumbers.Add(num2);
-                                    <p>Número 2: <span>@num2</span></p>
-                                }
+                                operatingNumbers.Add(num2);
+                                <p>Número 2: <span>@num2</span></p>
+                              
                             }
-                            if (!String.IsNullOrEmpty(@Request.Form["num3"]) && Request.Form["num3Checkbox"] == "on")
+                            if (!String.IsNullOrEmpty(@Request.Form["num3"]) && Request.Form["num3Checkbox"] == "on" && decimal.TryParse(@Request.Form["num3"], out num3))
                             {
-                                if (decimal.TryParse(@Request.Form["num3"], out num3))
-                                {
-                                    operatingNumbers.Add(num3);
-                                    <p>Número 3: <span>@num3</span></p>
-                                }
+                                operatingNumbers.Add(num3);
+                                <p>Número 3: <span>@num3</span></p>
                             }
-                            if (!String.IsNullOrEmpty(@Request.Form["num4"]) && Request.Form["num4Checkbox"] == "on")
+                            if (!String.IsNullOrEmpty(@Request.Form["num4"]) && Request.Form["num4Checkbox"] == "on" && decimal.TryParse(@Request.Form["num4"], out num4))
                             {
-                                if (decimal.TryParse(@Request.Form["num4"], out num4))
-                                {
-                                    operatingNumbers.Add(num4);
-                                    <p>Número 4: <span>@num4</span></p>
-
-                                }
+                                operatingNumbers.Add(num4);
+                                <p>Número 4: <span>@num4</span></p>
                             }
 
                             if (@Request.Form["option"] == "sumar")
@@ -111,22 +99,22 @@
                     <div class="numberInputs">
                         <p class="numRow">
                             <label for="num1">Número 1: </label>
-                            <input type="number" id="num1" name="num1" required />
+                            <input type="number" step="any" id="num1" name="num1" />
                             <input type="checkbox" id="num1Checkbox" name="num1Checkbox" />
                         </p>
                         <p class="numRow">
                             <label for="num2">Número 2: </label>
-                            <input type="number" id="num2" name="num2" required />
+                            <input type="number" step="any" id="num2" name="num2" />
                             <input type="checkbox" id="num2Checkbox" name="num2Checkbox" />
                         </p>
                         <p class="numRow">
                             <label for="num3">Número 3: </label>
-                            <input type="number" id="num3" name="num3" required />
+                            <input type="number" step="any" id="num3" name="num3" />
                             <input type="checkbox" id="num3Checkbox" name="num3Checkbox" />
                         </p>
                         <p class="numRow">
                             <label for="num4">Número 4: </label>
-                            <input type="number" id="num4" name="num4" required />
+                            <input type="number" step="any" id="num4" name="num4" />
                             <input type="checkbox" id="num4Checkbox" name="num4Checkbox" />
                         </p>
                     </div>
