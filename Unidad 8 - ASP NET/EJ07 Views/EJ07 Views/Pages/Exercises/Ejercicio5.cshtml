@@ -8,27 +8,24 @@
 <form name="formEje5" method="post">
     @if (Request.Method == "POST")
     {
-       <p>
-           <label for="filas">Filas:</label>
-           <select name="filas" id="filas">
-               <option value="1">1</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-           </select>
-       </p>
-       <p>
-            <label for="filas">Filas:</label>
-            <select name="columnas" id="columnas" size="3">
+       <div class="ej5form">
+            <label for="rows">Filas:</label>
+            <select name="rows" id="rows" required>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
-        </p>
-
-        if (int.TryParse(Request.Form["filas"], out int rows) && int.TryParse(Request.Form["columnas"], out int columns))
+            <label for="columns">Columnas:</label>
+            <select name="columns" id="columns" size="3" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        if (int.TryParse(Request.Form["rows"], out int rows) && int.TryParse(Request.Form["columnas"], out int columns))
         {
             int nums = 1;
-            <table>
+            <table class="ej5table" cellspacing="0">
             @for(int i = 0; i < rows; i++)
             {
                 <tr>
@@ -40,28 +37,23 @@
             }
             </table>
         }
-        <div class="tableEj5">
-           
-       </div>
     }
     else
     {
-        <p>
-            <label for="filas">Filas:</label>
-            <select name="filas" id="filas">
+        <div class="ej5form">
+            <label for="rows">Filas:</label>
+            <select name="rows" id="rows" required>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
-        </p>
-        <p>
-            <label for="filas">Filas:</label>
-            <select name="filas" id="filas" size="3">
+            <label for="columns">Columnas:</label>
+            <select name="columns" id="columns" size="3" required>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
-        </p>
+        </div>
     }
     <p><input type="submit" class="submitButton" value="Rellenar"/></p>
 </form>

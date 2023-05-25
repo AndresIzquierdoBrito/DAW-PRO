@@ -1,18 +1,156 @@
 ﻿@page
 @model EJ07_Views.Pages.Exercises.Pages_Exercises_Ejercicio6
+@using System.Text
 @{
     ViewData["Title"] = "Ejercicio 6 - EJ0704";
+    string pswd = "";
 }
 
 <h2>Generador de contraseñas</h2>
 <form name="formEje6" method="post">
     @if (Request.Method == "POST")
     {
+        <div class="ej6form">
+            <label for="content">Contenido:</label>
+            <select name="content" id="content">
+              <option disabled selected value=""></option>
+                <option value="letters">Letras</option>
+                <option value="lettersNums">Letras y números</option>
+                <option value="lettersNumsSymbols">Letras, números y símbolos</option>
+            </select>
+            <label for="size">Tamaño:</label>
+            <input type="number" name="size" id="size" min="8" max="20" /> 
+        </div>
+        <br />
+        <input type="submit" name="generate" value="Generar" class="submitButton" />
+        <input type="submit" name="clear" value="Limpiar" class="submitButton" />
+        @if (Request.Form["generate"] == "Generar")
+        {
+            <div class="passwdBox">
+                <p><strong>Nueva contraseña: </strong></p>
+                @{
+                    if (!String.IsNullOrEmpty(@Request.Form["size"]) && int.TryParse(@Request.Form["size"], out int size))
+                    {
+                        if (!String.IsNullOrEmpty(@Request.Form["content"]))
+                        {
+                            if (Request.Form["content"] == "letters" && size >= 14)
+                            {
+                                const string allowedChars = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZáéíóúÁÉÍÓÚ";
+                                int index;
+                                StringBuilder password = new StringBuilder();
+                                Random random = new Random();
+                                for (int i = 0; i < size; i++)
+                                {
+                                    index = random.Next(allowedChars.Length);
+                                    password.Append(allowedChars[index]);
+                                }
+                                pswd = password.ToString();
+                                <p>@pswd</p>
+                                <input type="hidden" id="passwd" name="passwd" value=@password />
+                            }
+                                else if (Request.Form["content"] == "lettersNums" && size >= 12)
+                            {
+                                const string allowedChars = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZáéíóúÁÉÍÓÚ0123456789";
+                                int index;
+                                StringBuilder password = new StringBuilder();
+                                Random random = new Random();
+                                for (int i = 0; i < size; i++)
+                                {
+                                    index = random.Next(allowedChars.Length);
+                                    password.Append(allowedChars[index]);
+                                }
+                                pswd = password.ToString();
+                                <p>@pswd</p>
+                                <input type="hidden" id="passwd" name="passwd" value=@password />
+                            }
+                                else if (Request.Form["content"] == "lettersNumsSymbols" && size >= 8)
+                            {
+                                const string allowedChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚ0123456789!@#$%^&*()_-+=[]{};:,.<>?";
+                                int index;
+                                StringBuilder password = new StringBuilder();
+                                Random random = new Random();
+                                for (int i = 0; i < size; i++)
+                                {
+                                    index = random.Next(allowedChars.Length);
+                                    password.Append(allowedChars[index]);
+                                }
+                                pswd = password.ToString();
+                                <p>@pswd</p>              
+                                <input type="hidden" id="passwd" name="passwd" value=@password />
+                            }
+                            else
+                            {
+                                <p>Criterios no válidos</p>
+                                <p><strong>ERROR</strong></p>
+                                <p>Longitud de contraseña inválida</p>
+                            }
 
+                        }
+                        else
+                        {
+                            <p>Error al elegir el tipo de contraseña.</p>
+
+                        }
+                    }
+                    else
+                    {
+                       <p>Error al elegir el tamaño.</p> 
+                    }
+
+                }
+                @if (pswd != "")
+                {
+                    <p><strong>Prueba lacontraseña: </strong></p>
+                    <input type="text" name="repeatedPasswd"/>
+                    <br />
+                    <input type="submit" name="checkPasswd" value="Comprobar" class="submitButton" />
+                }
+            </div>
+        }
+        @if (Request.Form["checkPasswd"] == "Comprobar" && Request.Form["passwd"] != "")
+        {
+            <input type="hidden" id="passwd" name="passwd" value=@Request.Form["passwd"] />
+
+            <div class="passwdBox">
+                <p><strong>Nueva contraseña: </strong></p>
+                <p>@Request.Form["passwd"]</p>
+                <p><strong>Prueba lacontraseña: </strong></p>
+                <input type="text" name="repeatedPasswd" />
+                <br/>
+                <input type="submit" name="checkPasswd" value="Comprobar" class="submitButton" />
+            </div>
+            <div class="passwordCheckBox">
+                <h3>Contraseña comprobada</h3>
+                @if (Request.Form["passwd"] == Request.Form["repeatedPasswd"])
+                {
+                    <img src="~/media/check.png" class="pwdImgs" />
+                }
+                else
+                {
+                    <img src="~/media/wrong.png" class="pwdImgs" />
+                }
+            </div>
+            <br />
+
+        }
     }
     else
     {
-
+        <div class="ej6form">
+            <label for="content">Contenido:</label>
+            <select name="content" id="content" required>
+                <option disabled selected value=""></option>
+                <option value="letters">Letras</option>
+                <option value="lettersNums">Letras y números</option>
+                <option value="lettersNumsSymbols">Letras, números y símbolos</option>
+            </select>
+            <label for="size">Tamaño:</label>
+            <input type="number" name="size" id="size" max="20" required />
+        </div>
+        <br />
+        <input type="submit" name="generate" value="Generar" class="submitButton" />
+        <input type="submit" name="clear" value="Limpiar" class="submitButton" />
     }
-    <p><input type="submit" class="submitButton" /></p>
+    
+    
 </form>
