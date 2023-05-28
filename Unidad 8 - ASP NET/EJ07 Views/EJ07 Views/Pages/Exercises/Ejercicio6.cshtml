@@ -22,9 +22,9 @@
             <input type="number" name="size" id="size" min="8" max="20" /> 
         </div>
         <br />
-        <input type="submit" name="generate" value="Generar" class="submitButton" />
-        <input type="submit" name="clear" value="Limpiar" class="submitButton" />
-        @if (Request.Form["generate"] == "Generar")
+        <input type="submit" name="action" value="Generar" class="submitButton" />
+        <input type="submit" name="action" value="Limpiar" class="submitButton" />
+        @if (Request.Form["action"] == "Generar")
         {
             <div class="passwdBox">
                 <p><strong>Nueva contraseña: </strong></p>
@@ -100,14 +100,14 @@
                 }
                 @if (pswd != "")
                 {
-                    <p><strong>Prueba lacontraseña: </strong></p>
+                    <p><strong>Prueba la contraseña: </strong></p>
                     <input type="text" name="repeatedPasswd"/>
                     <br />
-                    <input type="submit" name="checkPasswd" value="Comprobar" class="submitButton" />
+                    <input type="submit" name="action" value="Comprobar" class="submitButton" />
                 }
             </div>
         }
-        @if (Request.Form["checkPasswd"] == "Comprobar" && Request.Form["passwd"] != "")
+        @if (Request.Form["action"] == "Comprobar" && Request.Form["passwd"] != "")
         {
             <input type="hidden" id="passwd" name="passwd" value=@Request.Form["passwd"] />
 
@@ -117,7 +117,7 @@
                 <p><strong>Prueba la contraseña: </strong></p>
                 <input type="text" name="repeatedPasswd" />
                 <br/>
-                <input type="submit" name="checkPasswd" value="Comprobar" class="submitButton" />
+                <input type="submit" name="action" value="Comprobar" class="submitButton" />
             </div>
             <div class="passwordCheckBox">
                 <h3>Contraseña comprobada</h3>
@@ -148,8 +148,8 @@
             <input type="number" name="size" id="size" max="20" required />
         </div>
         <br />
-        <input type="submit" name="generate" value="Generar" class="submitButton" />
-        <input type="submit" name="clear" value="Limpiar" class="submitButton" />
+        <input type="submit" name="action" value="Generar" class="submitButton" />
+        <input type="submit" name="action" value="Limpiar" class="submitButton" />
     }
     
     
