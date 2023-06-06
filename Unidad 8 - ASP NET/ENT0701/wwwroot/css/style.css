@@ -1,0 +1,111 @@
+body {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header a{
+  text-decoration: none;
+  color: #9ca3af;
+}
+header {
+  background-color: #1C2435;
+  color: #a1a6b2;
+  height: 8vh;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  position:fixed;
+  top:0;
+}
+
+.hospIcon{
+  width: 100%;
+  height: auto;
+  max-width: 4.5vw;
+  max-height: 10vh;
+  margin: 0vh 0 0 4vw;
+  float: left;
+}
+
+footer {
+  background-color: #242d3a;
+  color: #e5e7eb;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left-menu {
+  background-color: #1C2435;
+  float: left;
+  width: 15%;
+  height: calc(100vh - 20vh); 
+  top: 12vh;
+  position: fixed; 
+}
+
+.left-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.left-menu li {
+  margin-bottom: 10px;
+}
+
+.left-menu li a {
+  display: flex; /* Use flex display to align items */
+  align-items: center; /* Center align items vertically */  padding: 2vh;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+svg.menuIcon{
+  margin-right: 10px;
+  fill: #9ca3af;
+  transition: all 0.2s;
+}
+
+a.menuButton{
+  display: block;
+  padding: 13px 30px;
+  font-size: 16px;
+  position: relative;
+  transition: all 0.2s;
+  border-radius: .4em;
+}
+
+a.menuButton:hover{
+  color: #e5e7eb;
+  background: #374151;
+}
+a.menuButton:hover svg.menuIcon,
+a.menuButton:hover + svg.menuIcon {
+  fill: #e5e7eb;
+}
+
+.main-content {
+  z-index: -1;
+  margin-left: 18%;
+  margin-top: 8vh;
+  padding: 60px;
+  position: sticky;
+}

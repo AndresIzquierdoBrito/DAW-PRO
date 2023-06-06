@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ENT0701.Models.Products">
+    <Position X="1.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAAAAAAAAEAAgAAAAAAAAAAgAAAACAAAAAAAAAZCAA=</HashCode>
+      <FileName>Models\Products.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ENT0701.Models.Brands">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAQAAQ=</HashCode>
+      <FileName>Models\Brands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ENT0701.Models.Categories">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAACAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Categories.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ENT0701.Models.Customers">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAACAAAAAIAAAAAAAAAAAAABABAAIAJAAAAAg=</HashCode>
+      <FileName>Models\Customers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ENT0701.Models.OrderItems">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIECAAAAAAAAAAAAgAAAAAAAAAAAAAAAAgAAgAAAAAA=</HashCode>
+      <FileName>Models\OrderItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ENT0701.Models.Orders">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAEAAAAAAAECAAAAAAAAMAAAACAAABBCAAAAAQAAAAA=</HashCode>
+      <FileName>Models\Orders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ENT0701.Models.Staffs">
+    <Position X="7.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAACAABAAAAAAIEAAAAAAABAAiAAAAIQAAAAg=</HashCode>
+      <FileName>Models\Staffs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ENT0701.Models.Stocks">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAgQAAAAA=</HashCode>
+      <FileName>Models\Stocks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ENT0701.Models.Stores">
+    <Position X="4.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQAAAACAAAAAIAAAAEAAAgCAAAAABAAIAJAAAAAA=</HashCode>
+      <FileName>Models\Stores.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
