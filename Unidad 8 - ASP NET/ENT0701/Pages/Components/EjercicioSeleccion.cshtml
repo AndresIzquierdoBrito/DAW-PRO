@@ -4,3 +4,63 @@
 @{
     ViewData["Title"] = "Seleccion";
 }
+<form name="selectionForm" method="post">
+    @if (Request.Method == "POST")
+    {
+        <div class="selectionBox">
+            <div class="checkboxOption">
+                <label for="firstCheckbox">Primera opción</label>
+                <input type="checkbox" name="firstCheckbox" />
+            </div>
+            <div class="checkboxOption">
+                <label for="secondCheckbox">Segunda opción</label>
+                <input type="checkbox" name="secondCheckbox" />
+            </div>
+            <div class="checkboxOption">
+                <label for="thirdCheckbox">Tercera opción</label>
+                <input type="checkbox" name="thirdCheckbox" />
+            </div>
+            <div class="radioButtons">
+                <div class="radioButtonRow">
+                    <input type="radio" name="radioOption" value="firstValue" required/>
+                    <label for="firstValue">Primer radio:</label>
+                </div>
+                <div class="radioButtonRow">
+                    <input type="radio" name="radioOption" value="secondValue" />
+                    <label for="secondValue">Segundo radio:</label>
+                </div>
+            </div>
+        </div>
+        <div class="selectedInformation">
+
+        </div>
+    }
+    else
+    {
+        <div class="selectionBox">
+            <div class="checkboxOption">
+                <label for="firstCheckbox">Primera opción</label>
+                <input type="checkbox" name="firstCheckbox" />
+            </div>
+            <div class="checkboxOption">
+                <label for="secondCheckbox">Segunda opción</label>
+                <input type="checkbox" name="secondCheckbox" />
+            </div>
+            <div class="checkboxOption">
+                <label for="thirdCheckbox">Tercera opción</label>
+                <input type="checkbox" name="thirdCheckbox" />
+            </div>
+            <div class="radioButtons">
+                <div class="radioButtonRow">
+                    <input type="radio" name="radioOption" value="firstValue" required/>
+                    <label for="firstValue">Primer radio:</label>
+                </div>
+                <div class="radioButtonRow">
+                    <input type="radio" name="radioOption" value="secondValue" />
+                    <label for="secondValue">Segundo radio:</label>
+                </div>
+            </div>
+        </div>
+    }   
+    <input type="submit" name="action" value="Mostrar" />
+</form>
