@@ -4,16 +4,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ENT0701.Pages
 {
+    [IgnoreAntiforgeryToken(Order = 1001)]
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public readonly BikeStoresDB Data;
-
-        public IndexModel(BikeStoresDB data)
-        {
-            Data = data;
-        }
 
         public void OnGet()
         {

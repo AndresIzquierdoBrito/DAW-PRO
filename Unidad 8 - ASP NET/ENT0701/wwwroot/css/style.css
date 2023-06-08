@@ -10,14 +10,15 @@ header a{
   color: #9ca3af;
 }
 header {
-  background-color: #1C2435;
-  color: #a1a6b2;
-  height: 8vh;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  position:fixed;
-  top:0;
+    background-color: #1C2435;
+    color: #a1a6b2;
+    height: 8vh;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .hospIcon{
@@ -103,9 +104,9 @@ a.menuButton:hover + svg.menuIcon {
 }
 
 .main-content {
-  z-index: -1;
   margin-left: 18%;
   margin-top: 8vh;
+  margin-bottom: 8vh;
   padding: 60px;
   position: sticky;
 }

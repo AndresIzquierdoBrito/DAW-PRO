@@ -8,59 +8,112 @@
     @if (Request.Method == "POST")
     {
         <div class="selectionBox">
-            <div class="checkboxOption">
-                <label for="firstCheckbox">Primera opción</label>
-                <input type="checkbox" name="firstCheckbox" />
+            <h2>Brands:</h2>
+            <div class="electra">
+                <label for="firstCheckbox">Electra</label>
+                <input type="checkbox" name="electra" @(Request.Form["electra"] == "on" ? "checked" : "") />
             </div>
             <div class="checkboxOption">
-                <label for="secondCheckbox">Segunda opción</label>
-                <input type="checkbox" name="secondCheckbox" />
+                <label for="trek">Trek</label>
+                <input type="checkbox" name="trek" @(Request.Form["trek"] == "on" ? "checked" : "") />
             </div>
             <div class="checkboxOption">
-                <label for="thirdCheckbox">Tercera opción</label>
-                <input type="checkbox" name="thirdCheckbox" />
+                <label for="surly">Surly</label>
+                <input type="checkbox" name="surly" @(Request.Form["surly"] == "on" ? "checked" : "") />
+            </div>
+            <div class="checkboxOption">
+                <label for="sunBicycles">Sun Bicycles</label>
+                <input type="checkbox" name="sunBicycles" @(Request.Form["sunBicycles"] == "on" ? "checked" : "") />
             </div>
             <div class="radioButtons">
+                <h2>Price:</h2>
                 <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="firstValue" required/>
-                    <label for="firstValue">Primer radio:</label>
+                    <input type="radio" name="radioOption" value="less1000" required @(Request.Form["radioOption"] == "less1000" ? "checked" : "") />
+                    <label for="less1000">&lt1000€</label>
                 </div>
                 <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="secondValue" />
-                    <label for="secondValue">Segundo radio:</label>
+                    <input type="radio" name="radioOption" value="more1000" @(Request.Form["radioOption"] == "more1000" ? "checked" : "") />
+                    <label for="more1000">>=1000€</label>
                 </div>
             </div>
+            <input type="submit" name="action" value="Submit" />
         </div>
         <div class="selectedInformation">
+            <table>
+                <tr>
+                    <th>Brand</th>
+                    <th>Name</th>
+                    <th>Model Year</th>
+                    <th>Stock (All stores)</th>
+                    <th>Price</th>
+                </tr>
+                @{
+                    EjercicioSeleccionModel model = new EjercicioSeleccionModel(Model.Data);
+                    List<string[]> brandProductsList = new List<string[]>();
+
+                    if(Request.Form["electra"] == "on")
+                    {
+                        brandProductsList.AddRange(model.GetBrandProductList("Electra", Request.Form["radioOption"]));
+                    }
+                    if (Request.Form["trek"] == "on")
+                    {
+                        brandProductsList.AddRange(model.GetBrandProductList("Trek", Request.Form["radioOption"]));
+                    }
+                    if (Request.Form["surly"] == "on")
+                    {
+                        brandProductsList.AddRange(model.GetBrandProductList("Surly", Request.Form["radioOption"]));
+                    }
+                    if (Request.Form["sunBicycles"] == "on")
+                    {
+                        brandProductsList.AddRange(model.GetBrandProductList("Sun Bicycles", Request.Form["radioOption"]));
+                    }
+                    foreach(string[] product in brandProductsList)
+                    {
+                        <tr>
+                            <td>@product[0]</td> @* Brand *@
+                            <td>@product[1]</td> @* Brand *@
+                            <td>@product[2]</td> @* Brand *@
+                            <td>@product[3]</td> @* Brand *@
+                            <td>@product[4]</td> @* Brand *@
+                        </tr>
+                    }
+            }
+            </table>
 
         </div>
     }
     else
     {
         <div class="selectionBox">
-            <div class="checkboxOption">
-                <label for="firstCheckbox">Primera opción</label>
-                <input type="checkbox" name="firstCheckbox" />
+            <h2>Brands:</h2>
+            <div class="electra">
+                <label for="firstCheckbox">Electra</label>
+                <input type="checkbox" name="electra"/>
             </div>
             <div class="checkboxOption">
-                <label for="secondCheckbox">Segunda opción</label>
-                <input type="checkbox" name="secondCheckbox" />
+                <label for="trek">Trek</label>
+                <input type="checkbox" name="trek"/>
             </div>
             <div class="checkboxOption">
-                <label for="thirdCheckbox">Tercera opción</label>
-                <input type="checkbox" name="thirdCheckbox" />
+                <label for="surly">Surly</label>
+                <input type="checkbox" name="surly"/>
+            </div>
+            <div class="checkboxOption">
+                <label for="sunBicycles">Sun Bicycles</label>
+                <input type="checkbox" name="sunBicycles"/>
             </div>
             <div class="radioButtons">
+                <h2>Price:</h2>
                 <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="firstValue" required/>
-                    <label for="firstValue">Primer radio:</label>
+                    <input type="radio" name="radioOption" value="less1000" required/>
+                    <label for="less1000">&lt1000€</label>
                 </div>
                 <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="secondValue" />
-                    <label for="secondValue">Segundo radio:</label>
+                    <input type="radio" name="radioOption" value="more1000"/>
+                    <label for="more1000">>=1000€</label>
                 </div>
             </div>
+            <input type="submit" name="action" value="Submit" />
         </div>
     }   
-    <input type="submit" name="action" value="Mostrar" />
 </form>

@@ -4,3 +4,111 @@
 @{
     ViewData["Title"] = "Filtro";
 }
+<head>
+    <script>
+        function resetBikeModel() {
+            var brandSelect = document.querySelector('select[name="brand"]');
+            var bikeModelSelect = document.querySelector('select[name="bikeModel"]');
+            bikeModelSelect.selectedIndex = 0;
+            brandSelect.form.submit();
+        }
+    </script>
+</head>
+<form name="filterForm" method="post">
+    @if(Request.Method == "POST")
+    {
+        <div class="comboBox">
+            <div cite="topSelect">
+                <label for="brand">Brand:</label>
+                <select name="brand" onchange="resetBikeModel()">
+                    <option disabled selected value=""></option>
+                    @{
+                        List<string> brandNames = (from Brands in Model.Data.Brands
+                                                   select Brands.BrandName).ToList();
+                        foreach (string brand in brandNames)
+                        {
+                            var isSelected = Request.Form["brand"] == brand ? "selected" : null;
+                            <option value="@brand" selected="@isSelected">@brand</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="bottomSelect">
+                <label for="bikeModel">Model:</label>
+                <select name="bikeModel" onchange="this.form.submit()">
+                    <option disabled selected value=""></option>
+                    @{
+                        if (Request.Form["brand"] != "")
+                        {
+                            string selectedBrand = Request.Form["brand"];
+                            List<string> bikeName = (from Products in Model.Data.Products
+                                                     join Brands in Model.Data.Brands
+                                                        on Products.BrandId equals Brands.BrandId
+                                                     where Brands.BrandName == selectedBrand
+                                                     orderby Products.ProductName descending
+                                                     select Products.ProductName).ToList();
+                            foreach (string bike in bikeName)
+                            {
+                                var isSelected = Request.Form["bikeModel"] == bike ? "selected" : null;
+                                <option value="@bike" selected="@isSelected">@bike</option>
+                            }
+                        }
+                    }
+                </select>
+            </div>
+            <div class="completeListOrders">
+                <table>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Discount</th>
+                        <th>List Price</th>
+                        <th>Sold Price</th>
+                    </tr>
+                    @{
+                        EjercicioFiltroModel model = new EjercicioFiltroModel(Model.Data);
+                        List<string[]> allDataFiltered = model.FilterByBikeModel(Request.Form["brand"], Request.Form["bikeModel"]);
+
+                        foreach (string[] dataRow in allDataFiltered)
+                        {
+                            <tr>
+                                <td>@dataRow[0]</td>
+                                <td>@dataRow[1]</td>
+                                <td>@dataRow[2]</td>
+                                <td>@dataRow[3]</td>
+                                <td>@dataRow[4]</td>
+                                <td>@dataRow[5]</td>
+                            </tr>
+                        }
+                    }
+                </table>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="comboBox">
+            <div cite="topSelect">
+                <label for="brand">Brand:</label>
+                <select name="brand" onchange="this.form.submit()">
+                    <option disabled selected value=""></option>
+                    @{
+                        List<string> brandNames = (from Brands in Model.Data.Brands
+                                                   select Brands.BrandName).ToList();
+                        foreach(string brand in brandNames)
+                        {
+                            <option value="@brand">@brand</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="bottomSelect">
+                <label for="modelYear">Model Year:</label>
+                <select name="modelYear" class="disabledSelect">
+                    <option disabled selected value=""></option>
+                </select>
+            </div>
+        </div>
+    }
+</form>
