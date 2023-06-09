@@ -51,7 +51,7 @@
                     EjercicioSeleccionModel model = new EjercicioSeleccionModel(Model.Data);
                     List<string[]> brandProductsList = new List<string[]>();
 
-                    if(Request.Form["electra"] == "on")
+                    if (Request.Form["electra"] == "on")
                     {
                         brandProductsList.AddRange(model.GetBrandProductList("Electra", Request.Form["radioOption"]));
                     }
@@ -67,7 +67,7 @@
                     {
                         brandProductsList.AddRange(model.GetBrandProductList("Sun Bicycles", Request.Form["radioOption"]));
                     }
-                    foreach(string[] product in brandProductsList)
+                    foreach (string[] product in brandProductsList)
                     {
                         <tr>
                             <td>@product[0]</td> @* Brand *@
@@ -77,7 +77,7 @@
                             <td>@product[4]</td> @* Brand *@
                         </tr>
                     }
-            }
+                }
             </table>
 
         </div>
@@ -88,32 +88,32 @@
             <h2>Brands:</h2>
             <div class="electra">
                 <label for="firstCheckbox">Electra</label>
-                <input type="checkbox" name="electra"/>
+                <input type="checkbox" name="electra" />
             </div>
             <div class="checkboxOption">
                 <label for="trek">Trek</label>
-                <input type="checkbox" name="trek"/>
+                <input type="checkbox" name="trek" />
             </div>
             <div class="checkboxOption">
                 <label for="surly">Surly</label>
-                <input type="checkbox" name="surly"/>
+                <input type="checkbox" name="surly" />
             </div>
             <div class="checkboxOption">
                 <label for="sunBicycles">Sun Bicycles</label>
-                <input type="checkbox" name="sunBicycles"/>
+                <input type="checkbox" name="sunBicycles" />
             </div>
             <div class="radioButtons">
                 <h2>Price:</h2>
                 <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="less1000" required/>
+                    <input type="radio" name="radioOption" value="less1000" required />
                     <label for="less1000">&lt1000€</label>
                 </div>
                 <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="more1000"/>
+                    <input type="radio" name="radioOption" value="more1000" />
                     <label for="more1000">>=1000€</label>
                 </div>
             </div>
             <input type="submit" name="action" value="Submit" />
         </div>
-    }   
+    }
 </form>

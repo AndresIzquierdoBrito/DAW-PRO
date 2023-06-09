@@ -1,0 +1,31 @@
+﻿@page
+@using ENT0701.Models
+@model ENT0701.Pages.Components.EjercicioEncontrarModel
+@{
+    ViewData["Title"] = "Buscar";
+
+    List<string> suggestions = new List<string>
+    {
+        "Apple",
+        "Banana",
+        "Cherry",
+        "Grape",
+        "Orange",
+        "Apple",
+        "Banana",
+        "Cherry",
+        "Grape",
+        "Orange",
+        "Apple"
+    };
+}
+
+
+<input list="suggestionList" minlength="2" />
+
+<datalist id="suggestionList" style="height:5.1em;overflow:hidden">
+    @foreach (string suggestion in suggestions)
+    {
+        <option value="@suggestion"></option>
+    }
+</datalist>

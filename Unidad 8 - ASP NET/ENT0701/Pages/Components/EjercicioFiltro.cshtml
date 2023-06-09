@@ -15,7 +15,7 @@
     </script>
 </head>
 <form name="filterForm" method="post">
-    @if(Request.Method == "POST")
+    @if (Request.Method == "POST")
     {
         <div class="comboBox">
             <div cite="topSelect">
@@ -43,7 +43,7 @@
                             string selectedBrand = Request.Form["brand"];
                             List<string> bikeName = (from Products in Model.Data.Products
                                                      join Brands in Model.Data.Brands
-                                                        on Products.BrandId equals Brands.BrandId
+                                                     on Products.BrandId equals Brands.BrandId
                                                      where Brands.BrandName == selectedBrand
                                                      orderby Products.ProductName descending
                                                      select Products.ProductName).ToList();
@@ -96,7 +96,7 @@
                     @{
                         List<string> brandNames = (from Brands in Model.Data.Brands
                                                    select Brands.BrandName).ToList();
-                        foreach(string brand in brandNames)
+                        foreach (string brand in brandNames)
                         {
                             <option value="@brand">@brand</option>
                         }

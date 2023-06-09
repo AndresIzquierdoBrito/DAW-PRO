@@ -5,6 +5,7 @@
     ViewData["Title"] = "Fecha";
     DateTime Now = DateTime.Now;
     string today = Now.ToString("yyyy-MM-dd");
+    int pageSize = 5;
 }
 <form name="dateForm" method="post">
     <p>Los datos tienen las fechas entre 1-1-2016 y el 31-12-2018 :)</p>
@@ -17,14 +18,40 @@
         </div>
         <input type="submit" name="action" value="Submit" />
         <div class="dateResultData">
-            <table class="dateTable">
-                @{
-                    EjercicioFechaModel model = new EjercicioFechaModel(Model.Data);
-                    List<string> storeNames = (from Stores in Model.Data.Stores
-                                               select Stores.StoreName).ToList();
+            @{
+                int currentIndex = 0;
+                int nextIndex = 1;
+                string indexingValue = Request.Form["indexing"];
 
-                    foreach (string store in storeNames)
+                DateTime inputDate = DateTime.Parse(Request.Form["dateInput"]);
+
+                EjercicioFechaModel model = new EjercicioFechaModel(Model.Data);
+                List<string> storeNames = (from Stores in Model.Data.Stores
+                                            select Stores.StoreName).ToList();
+
+                if (!string.IsNullOrEmpty(indexingValue) && int.TryParse(indexingValue, out int parsedIndex))
+                {
+                    currentIndex = parsedIndex;
+                    nextIndex = currentIndex;
+                }
+
+                if (Request.Form["action"] == "previousPage")
+                {
+                    nextIndex--;
+                }
+                else if (Request.Form["action"] == "nextPage")
+                {
+                    nextIndex++;
+                }
+
+                int lastIndex = model.GetLastIndex(inputDate);
+
+                <input type="number" value="@nextIndex" name="indexing" hidden />
+
+                <div class="storeTables">
+                    @foreach (string store in storeNames)
                     {
+                        <table class="dateTable">
                         <tr class="storeNameDate"><th colspan="3">@store</th></tr>
                         <tr>
                             <th>Order ID</th>
@@ -33,19 +60,34 @@
                             <th>Delay (days)</th>
                         </tr>
 
-                        List<string[]> ordersData = model.GetStoreActiveOrders(store, DateTime.Parse(Request.Form["dateInput"]));
-                        foreach(string[] dataRow in ordersData)
-                        {
-                            <tr>
-                                <td>@dataRow[0]</td>    @* OrderID *@
-                                <td>@(dataRow[1] == "1" ? "Pending" : "Processing")</td>    @* OrderStatus *@
-                                <td>@dataRow[2]</td>    @* OrderDate *@
-                                <td>@(!dataRow[3].Contains('-') ? "0" : dataRow[3].Substring(1))</td>    @* Delay(in days) *@
-                            </tr>
+                        @{
+                            List<string[]> ordersData = model.GetStoreActiveOrders(store, inputDate, pageSize, nextIndex);
+
+                            foreach(string[] dataRow in ordersData)
+                            {
+                                <tr>
+                                    <td>@dataRow[0]</td>                                                    @* OrderID *@
+                                    <td>@(dataRow[1] == "1" ? "Pending" : "Processing")</td>                @* OrderStatus *@
+                                    <td>@dataRow[2]</td>                                                    @* OrderDate *@
+                                    <td>@(!dataRow[3].Contains('-') ? "0" : dataRow[3].Substring(1))</td>   @* Delay(in days) *@
+                                </tr>
+                            }
                         }
+                        </table>
                     }
+                </div>
+
+            }
+            <div class="paginationButtons">
+                @if (nextIndex != 1)
+                {
+                    <input type="submit" name="action" value="previousPage" />
                 }
-             </table>
+                @if (nextIndex != lastIndex)
+                {
+                    <input type="submit" name="action" value="nextPage" />
+                }
+            </div>
         </div>
     }
     else

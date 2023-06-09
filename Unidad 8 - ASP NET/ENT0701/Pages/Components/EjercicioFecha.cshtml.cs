@@ -11,20 +11,34 @@ namespace ENT0701.Pages.Components
 
         public readonly BikeStoresDB Data;
 
-        public List<string[]> GetStoreActiveOrders(string storeName, DateTime formDate)
+        public List<string[]> GetStoreActiveOrders(string storeName, DateTime formDate, int pageSize, int currentPage)
         {
             var query = (from Stores in Data.Stores
                          join Orders in Data.Orders
                            on Stores.StoreId equals Orders.StoreId
                          where Stores.StoreName == storeName && (Orders.OrderStatus == 1 || Orders.OrderStatus == 2)
+                         orderby Orders.OrderId descending
                          select new string[] { Orders.OrderId.ToString(), 
                                                Orders.OrderStatus.ToString(), 
                                                Orders.OrderDate.ToString(), 
                                                Orders.OrderDate.Subtract(formDate).Days.ToString() }
-                         ).ToList();
+                         ).Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
             return query;
         }
 
+        public int GetLastIndex(DateTime formDate)
+        {
+            return (from Stores in Data.Stores
+                        join Orders in Data.Orders
+                        on Stores.StoreId equals Orders.StoreId
+                        where Orders.OrderStatus == 1 || Orders.OrderStatus == 2
+                        orderby Orders.OrderId descending
+                        select new string[] { Orders.OrderId.ToString(),
+                                            Orders.OrderStatus.ToString(),
+                                            Orders.OrderDate.ToString(),
+                                            Orders.OrderDate.Subtract(formDate).Days.ToString() }
+                        ).ToList().Count;
+        }
         public EjercicioFechaModel(BikeStoresDB data)
         {
             Data = data;
