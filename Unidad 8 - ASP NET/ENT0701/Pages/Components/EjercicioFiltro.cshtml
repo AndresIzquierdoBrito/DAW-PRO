@@ -3,6 +3,7 @@
 @model ENT0701.Pages.Components.EjercicioFiltroModel
 @{
     ViewData["Title"] = "Filtro";
+    EjercicioFiltroModel model = new EjercicioFiltroModel(Model.Data);
 }
 <head>
     <script>
@@ -17,11 +18,13 @@
 <form name="filterForm" method="post">
     @if (Request.Method == "POST")
     {
+        <h2>Filter</h2>
+        <p>Filter orders by first brand, then shows all of the models of the selected brand.</p>
         <div class="comboBox">
-            <div cite="topSelect">
+            <div class="topSelect">
                 <label for="brand">Brand:</label>
                 <select name="brand" onchange="resetBikeModel()">
-                    <option disabled selected value=""></option>
+                    <option disabled selected value=""/>
                     @{
                         List<string> brandNames = (from Brands in Model.Data.Brands
                                                    select Brands.BrandName).ToList();
@@ -41,7 +44,7 @@
                         if (Request.Form["brand"] != "")
                         {
                             string selectedBrand = Request.Form["brand"];
-                            List<string> bikeName = (from Products in Model.Data.Products
+                            List<string> bikeName = (from Products in               Model.Data.Products
                                                      join Brands in Model.Data.Brands
                                                      on Products.BrandId equals Brands.BrandId
                                                      where Brands.BrandName == selectedBrand
@@ -56,6 +59,8 @@
                     }
                 </select>
             </div>
+
+            </div>
             <div class="completeListOrders">
                 <table>
                     <tr>
@@ -67,7 +72,6 @@
                         <th>Sold Price</th>
                     </tr>
                     @{
-                        EjercicioFiltroModel model = new EjercicioFiltroModel(Model.Data);
                         List<string[]> allDataFiltered = model.FilterByBikeModel(Request.Form["brand"], Request.Form["bikeModel"]);
 
                         foreach (string[] dataRow in allDataFiltered)
@@ -84,10 +88,11 @@
                     }
                 </table>
             </div>
-        </div>
     }
     else
     {
+        <h2>Filter</h2>
+        <p>Filter orders by first brand, then shows all of the models of the selected brand.</p>
         <div class="comboBox">
             <div cite="topSelect">
                 <label for="brand">Brand:</label>
@@ -104,11 +109,38 @@
                 </select>
             </div>
             <div class="bottomSelect">
-                <label for="modelYear">Model Year:</label>
+                <label for="modelYear">Model:</label>
                 <select name="modelYear" class="disabledSelect">
                     <option disabled selected value=""></option>
                 </select>
             </div>
+        </div>
+        <div class="completeListOrders">
+            <table>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Discount</th>
+                    <th>List Price</th>
+                    <th>Sold Price</th>
+                </tr>
+                @{
+                    List<string[]> allDataFiltered = model.FilterByBikeModel();
+
+                    foreach (string[] dataRow in allDataFiltered)
+                    {
+                        <tr>
+                            <td>@dataRow[0]</td>
+                            <td>@dataRow[1]</td>
+                            <td>@dataRow[2]</td>
+                            <td>@dataRow[3]</td>
+                            <td>@dataRow[4]</td>
+                            <td>@dataRow[5]</td>
+                        </tr>
+                    }
+                }
+            </table>
         </div>
     }
 </form>

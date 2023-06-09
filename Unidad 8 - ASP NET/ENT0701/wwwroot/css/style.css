@@ -1,57 +1,125 @@
 body {
-  box-sizing: border-box; 
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    accent-color: #1c2435;
 }
 
 header a{
   text-decoration: none;
   color: #9ca3af;
 }
+
+a h1 {
+    font-size: 3em;
+    transition: all 0.5s;
+}
+
+a h1:hover {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
 header {
     background-color: #1C2435;
     color: #a1a6b2;
-    height: 8vh;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hospIcon{
-  width: 100%;
-  height: auto;
-  max-width: 4.5vw;
-  max-height: 10vh;
-  margin: 0vh 0 0 4vw;
-  float: left;
+.fixed{
+    display: inline-block;
+    position: fixed;
+}
+.hospIcon {
+    width: 100%;
+    height: auto;
+    max-width: 4.5vw;
+    max-height: 10vh;
+    margin-left: 5vw;
+    position: absolute;
+    left: 0;
+    top: 1.2vh;
+    transition: all 0.5s;
+}
+
+.hospIcon:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.flexMain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.backgroundImage {
+    width: 40vw;
+    position: absolute;
+    opacity: 0.15;
+    top: 12vh;
+    right: 0vw;
+}
+
+table {
+    width: 50vw;
+    border-collapse: collapse;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #1c2435;
+    color: #FFFFFF;
+    text-align: center;
+    height: 4vh;
+}
+
+tr:nth-child(even) {
+    background-color: #D7DDEA;
+}
+
+tr:nth-child(odd) {
+    background-color: #F2F4F8;
+}
+
+td {
+    text-align: center; 
+    vertical-align: middle; 
+    padding: 10px; 
 }
 
 footer {
-  background-color: #242d3a;
-  color: #e5e7eb;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  height: 8vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+    background-color: #242d3a;
+    color: #e5e7eb;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .left-menu {
-  background-color: #1C2435;
-  float: left;
-  width: 15%;
-  height: calc(100vh - 20vh); 
-  top: 12vh;
-  position: fixed; 
+    background-color: #1C2435;
+    width: 15%;
+    height: calc(100vh - 22vh);
 }
 
 .left-menu ul {
@@ -103,10 +171,168 @@ a.menuButton:hover + svg.menuIcon {
   fill: #e5e7eb;
 }
 
-.main-content {
-  margin-left: 18%;
-  margin-top: 8vh;
-  margin-bottom: 8vh;
-  padding: 60px;
-  position: sticky;
+main {
+    width: 83%;
+    padding: 0vh 1vw 0vw 3vh;
+    height: 76vh;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.btn {
+    border: 1px solid;
+    border-radius: .4em;
+    background-color: #1c2435;
+    color: #a1a6b2;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 8vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0px 5px 12px 0 rgba(120, 60, 20, .3);
+    color: #e5e7eb;
+    background-color: #374151;
+    transition: all 0.3s;
+}
+ 
+.selectionBox{
+    display: inline-block;
+}
+.checkboxOption {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    font-size: 1.3em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    transform: scale(2);
+    margin-right: 1vw;
+}
+
+.radioButtonRow, .checkboxOption {
+    font-size: 1.3em;
+    margin-bottom: 2vh;
+}
+
+.selectedInformation {
+    margin-top: 2vh;
+    margin-right: 7vw;
+    float: right;
+}
+
+.storeTables {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.dateBox{
+    font-size: 1.3em;
+}
+
+.dateBox input{
+    transform: scale(1.5);
+    position: relative;
+    left: 2vw;
+    bottom: .2vh;
+    margin-bottom: 3vh;
+}
+.dateTable{
+    margin: 0 1vw 0 1vw;
+}
+
+.paginationButtons{
+    margin-top: 3vh;
+    margin-left: 32vw;
+}
+
+.comboBox{
+    font-size: 1.4em;
+}
+
+.comboBox select{
+    min-width: 10vw;
+    width: fit-content;
+}
+
+.completeListOrders {
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.completeListOrders table{
+    width: 65vw;
+}
+
+
+.brandReports{
+    display: flex;
+    justify-content: center
+}
+.brandReports table {
+    width: 75vw;
+    font-size: 1.5em;
+}
+
+.logos {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 9vw;
+}
+
+.saleData {
+    text-align: center;
+}
+.saleData p{
+    font-size: 1.7em;
+}
+
+.staffManagementButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 32vh;
+}
+
+.staffManagementButtons input{
+    margin: 0 8vw 0 8vw;
+    transform:scale(2.3)
+}
+
+.addStaffForm > div, .removeStaffForm > div {
+    margin-bottom: 1vh;
+}
+
+.staffData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.return {
+    position: absolute;
+    right: 2vw;
+    top: 16vh;
+    text-align: center;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Regular.ttf") format("truetype");
 }

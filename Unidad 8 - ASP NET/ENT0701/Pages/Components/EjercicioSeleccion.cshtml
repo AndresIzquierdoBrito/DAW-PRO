@@ -3,40 +3,45 @@
 @model ENT0701.Pages.Components.EjercicioSeleccionModel
 @{
     ViewData["Title"] = "Seleccion";
+    EjercicioSeleccionModel model = new EjercicioSeleccionModel(Model.Data);
 }
 <form name="selectionForm" method="post">
     @if (Request.Method == "POST")
     {
-        <div class="selectionBox">
-            <h2>Brands:</h2>
-            <div class="electra">
-                <label for="firstCheckbox">Electra</label>
-                <input type="checkbox" name="electra" @(Request.Form["electra"] == "on" ? "checked" : "") />
-            </div>
-            <div class="checkboxOption">
-                <label for="trek">Trek</label>
-                <input type="checkbox" name="trek" @(Request.Form["trek"] == "on" ? "checked" : "") />
-            </div>
-            <div class="checkboxOption">
-                <label for="surly">Surly</label>
-                <input type="checkbox" name="surly" @(Request.Form["surly"] == "on" ? "checked" : "") />
-            </div>
-            <div class="checkboxOption">
-                <label for="sunBicycles">Sun Bicycles</label>
-                <input type="checkbox" name="sunBicycles" @(Request.Form["sunBicycles"] == "on" ? "checked" : "") />
-            </div>
-            <div class="radioButtons">
-                <h2>Price:</h2>
-                <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="less1000" required @(Request.Form["radioOption"] == "less1000" ? "checked" : "") />
-                    <label for="less1000">&lt1000€</label>
+        <div class="fixed">
+            <div class="selectionBox">
+                <h2>Brands:</h2>
+                <div class="checkboxOption">
+                    <input type="checkbox" id="electra" name="electra" @(Request.Form["electra"] == "on" ? "checked" : "") />
+                    <label for="electra">Electra</label>
                 </div>
-                <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="more1000" @(Request.Form["radioOption"] == "more1000" ? "checked" : "") />
-                    <label for="more1000">>=1000€</label>
+                <div class="checkboxOption">
+                    <input type="checkbox" id="trek" name="trek" @(Request.Form["trek"] == "on" ? "checked" : "") />
+                    <label for="trek">Trek</label>
+
+                </div>
+                <div class="checkboxOption">
+                    <input type="checkbox" id="surly" name="surly" @(Request.Form["surly"] == "on" ? "checked" : "") />
+                    <label for="surly">Surly</label>
+
+                </div>
+                <div class="checkboxOption">
+                    <input type="checkbox" id="sunBicycles" name="sunBicycles" @(Request.Form["sunBicycles"] == "on" ? "checked" : "") />
+                    <label for="sunBicycles">Sun Bicycles</label>
+                </div>
+                <div class="radioButtons">
+                    <h2>Price:</h2>
+                    <div class="radioButtonRow">
+                        <input type="radio" id="less1000" name="radioOption" value="less1000" required @(Request.Form["radioOption"] == "less1000" ? "checked" : "") />
+                        <label for="less1000">&lt1000€</label>
+                    </div>
+                    <div class="radioButtonRow">
+                        <input type="radio" id="more1000" name="radioOption" value="more1000" @(Request.Form["radioOption"] == "more1000" ? "checked" : "") />
+                        <label for="more1000">>=1000€</label>
+                    </div>
                 </div>
             </div>
-            <input type="submit" name="action" value="Submit" />
+            <input class="btn" type="submit" name="action" value="Submit" />
         </div>
         <div class="selectedInformation">
             <table>
@@ -48,7 +53,6 @@
                     <th>Price</th>
                 </tr>
                 @{
-                    EjercicioSeleccionModel model = new EjercicioSeleccionModel(Model.Data);
                     List<string[]> brandProductsList = new List<string[]>();
 
                     if (Request.Form["electra"] == "on")
@@ -86,34 +90,34 @@
     {
         <div class="selectionBox">
             <h2>Brands:</h2>
-            <div class="electra">
-                <label for="firstCheckbox">Electra</label>
-                <input type="checkbox" name="electra" />
+            <div class="checkboxOption">
+                <input type="checkbox" id="electra" name="electra" />
+                <label for="electra">Electra</label>
             </div>
             <div class="checkboxOption">
+                <input type="checkbox" id="trek" name="trek" />
                 <label for="trek">Trek</label>
-                <input type="checkbox" name="trek" />
             </div>
             <div class="checkboxOption">
+                <input type="checkbox" id="surly" name="surly" />
                 <label for="surly">Surly</label>
-                <input type="checkbox" name="surly" />
             </div>
             <div class="checkboxOption">
+                <input type="checkbox" id="sunBicycles" name="sunBicycles" />
                 <label for="sunBicycles">Sun Bicycles</label>
-                <input type="checkbox" name="sunBicycles" />
             </div>
             <div class="radioButtons">
                 <h2>Price:</h2>
                 <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="less1000" required />
+                    <input type="radio" id="less1000" name="radioOption" value="less1000" required />
                     <label for="less1000">&lt1000€</label>
                 </div>
                 <div class="radioButtonRow">
-                    <input type="radio" name="radioOption" value="more1000" />
+                    <input type="radio" id="more1000" name="radioOption" value="more1000" />
                     <label for="more1000">>=1000€</label>
                 </div>
             </div>
-            <input type="submit" name="action" value="Submit" />
+            <input class="btn" type="submit" name="action" value="Submit" />
         </div>
     }
 </form>

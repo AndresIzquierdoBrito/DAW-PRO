@@ -10,7 +10,7 @@ namespace ENT0701.Pages.Components
         private readonly ILogger<EjercicioFiltroModel> _logger;
         public readonly BikeStoresDB Data;
 
-        public List<string[]> FilterByBikeModel(string? brand, string? bikeModel)
+        public List<string[]> FilterByBikeModel(string? brand = null, string? bikeModel = null)
         {
             var query = new List<string[]>();
             if (bikeModel != null)

@@ -6,17 +6,20 @@
     DateTime Now = DateTime.Now;
     string today = Now.ToString("yyyy-MM-dd");
     int pageSize = 5;
+
+    EjercicioFechaModel model = new EjercicioFechaModel(Model.Data);
 }
 <form name="dateForm" method="post">
-    <p>Los datos tienen las fechas entre 1-1-2016 y el 31-12-2018 :)</p>
+    <p style="float:right">Los datos tienen las fechas entre 1-1-2016 y el 31-12-2018 :)</p>
     @if (Request.Method == "POST")
     {
         <h2>Orders</h2>
+        <p>Retrieve orders sent after given date.</p>
         <div class="dateBox">
             <label for="dateInput">Date: </label>
             <input type="date" name="dateInput" max="@today" value="@Request.Form["dateInput"]" required />
         </div>
-        <input type="submit" name="action" value="Submit" />
+        <input class="btn" type="submit" name="action" value="Submit" />
         <div class="dateResultData">
             @{
                 int currentIndex = 0;
@@ -25,7 +28,6 @@
 
                 DateTime inputDate = DateTime.Parse(Request.Form["dateInput"]);
 
-                EjercicioFechaModel model = new EjercicioFechaModel(Model.Data);
                 List<string> storeNames = (from Stores in Model.Data.Stores
                                             select Stores.StoreName).ToList();
 
@@ -35,16 +37,16 @@
                     nextIndex = currentIndex;
                 }
 
-                if (Request.Form["action"] == "previousPage")
+                if (Request.Form["action"] == "previous Page")
                 {
                     nextIndex--;
                 }
-                else if (Request.Form["action"] == "nextPage")
+                else if (Request.Form["action"] == "next Page")
                 {
                     nextIndex++;
                 }
 
-                int lastIndex = model.GetLastIndex(inputDate);
+                int lastIndex = model.GetLastIndex(inputDate)/9;
 
                 <input type="number" value="@nextIndex" name="indexing" hidden />
 
@@ -52,7 +54,7 @@
                     @foreach (string store in storeNames)
                     {
                         <table class="dateTable">
-                        <tr class="storeNameDate"><th colspan="3">@store</th></tr>
+                        <tr class="storeNameDate"><th colspan="4">@store</th></tr>
                         <tr>
                             <th>Order ID</th>
                             <th>Order Status</th>
@@ -81,22 +83,24 @@
             <div class="paginationButtons">
                 @if (nextIndex != 1)
                 {
-                    <input type="submit" name="action" value="previousPage" />
+                    <input class="btn" type="submit" name="action" value="previous Page" />
                 }
                 @if (nextIndex != lastIndex)
                 {
-                    <input type="submit" name="action" value="nextPage" />
+                    <input class="btn" type="submit" name="action" value="next Page" />
                 }
             </div>
         </div>
     }
     else
     {
+        <h2>Orders</h2>
+        <p>Retrieve orders between today and given date.</p>
         <div class="dateBox">
             <label for="dateInput">Date: </label>
             <input type="date" name="dateInput" max="@today" required />
         </div>
-        <input type="submit" name="action" value="Submit" />
+        <input class="btn" type="submit" name="action" value="Submit" />
 
     }
 </form>

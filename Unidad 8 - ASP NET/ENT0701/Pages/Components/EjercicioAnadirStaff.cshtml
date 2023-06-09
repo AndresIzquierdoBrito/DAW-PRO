@@ -2,4 +2,189 @@
 @using ENT0701.Models
 @model ENT0701.Pages.Components.EjercicioAnadirStaffModel
 @{
+    EjercicioAnadirStaffModel model = new EjercicioAnadirStaffModel(Model.Data);
+    List<Stores> stores = new List<Stores>();
+    ViewData["Title"] = "Staff";
 }
+
+<form name="staffForm" method="post">
+    @if (Request.Method == "POST")
+    {
+        <a class="btn return" href="EjercicioAnadirStaff" >Return</a>
+        <div class="mainForm" >
+            @{
+                string? stringStaffID = Request.Form["staffID"];
+                if (Request.Form["action"] == "Add Staff")
+                {
+                    <h3>Add Staff</h3>
+                    <div class="addStaffForm">
+                        <div class="inputName">
+                            <label for="staffName">Name</label>
+                            <input type="text" name="staffName" required placeholder="John"/>
+                        </div>
+                        <div class="inputSurname">
+                            <label for="staffSurname">Surname</label>
+                            <input type="text" name="staffSurname" required placeholder="Doe"/>
+                        </div>
+                        <div class="inputEmail">
+                            <label for="staffEmail">Email</label>
+                            <input type="email" name="staffEmail" required placeholder="john.doe@bikes.shop" />
+                        </div>
+                        <div class="inputPhone">
+                            <label for="staffPhone">Phone number</label>
+                            <input type="tel" name="staffPhone" required placeholder="(000) 5555-555" />
+                        </div>
+                        <div class="inputStore">
+                            <label for="store">Store</label>
+                            <select name="store" required>
+                                <option disabled selected value="" />
+                                @{
+                                    stores = (from Stores in Model.Data.Stores
+                                                           select Stores).ToList();
+                                    foreach (Stores store in stores)
+                                    {
+                                        var isSelected = Request.Form["store"] == store.StoreName ? "selected" : null;
+                                        <option value="@store.StoreName" selected="@isSelected">@store.StoreName</option>
+                                    }
+                                }
+                            </select>
+                    </div>
+                        <input type="submit" class="btn" name="action" value="Add">
+                </div>
+                }
+                if (stringStaffID != null)
+                {
+                    <div class="removeStaffForm">
+                        <h3>Remove Staff</h3>
+                        <div class="staffID">
+                            <label for="staffID">Staff ID: </label>
+                            <input type="number" name="staffID" value="@Request.Form["staffID"]" required/>
+                        </div>
+                            <div class="removeCheckboxCheck">
+                                <label for="removeCheckboxCheck">Are you sure you want to remove this member?</label>
+                            <input type="checkbox" name="removeCheckboxCheck" required/>
+                        </div>
+                        <input type="submit" class="btn" name="action" value="Remove">
+                    </div>
+                }
+                else if (Request.Form["action"] == "Remove Staff")
+                {
+                    <h3>Remove Staff</h3>
+                    <div class="removeStaffForm">
+                        <div class="staffID">
+                            <label for="staffID">Staff ID: </label>
+                            <input type="number"  name="staffID" required />
+                        </div>
+                        <input type="submit" class="btn" name="action" value="Remove">
+                    </div>
+                }
+            }
+        </div>
+        <div class="submissionResult">
+            @if(Request.Form["action"] == "Add")
+            {
+                string staffName = Request.Form["staffName"];
+                string staffSurname = Request.Form["staffSurname"];
+                string staffEmail = Request.Form["staffEmail"];
+                string staffPhone = Request.Form["staffPhone"];
+                string storeName = Request.Form["store"];
+
+                stores = (from Stores in Model.Data.Stores
+                          select Stores).ToList();
+                @*foreach (Stores store in stores)
+                {
+                    var isSelected = Request.Form["store"] == store.StoreName ? "selected" : null;
+                    <option value="@store.StoreName" selected="@isSelected">@store.StoreName</option>
+                }
+*@
+                if (!model.ValidateEmptyNullEmpty(staffName) || !model.ValidateEmptyNullEmpty(staffSurname) ||
+                !model.ValidateStaffEmail(staffEmail) || !model.ValidateStaffPhone(staffPhone) ||
+                !model.ValidateEmptyNullEmpty(storeName))
+                {
+                    <h4>All fields are required</h4>
+
+                }
+                else if (!stores.Any(s => s.StoreName == storeName))
+                {
+                    <h4>Invalid store introducced</h4>
+                }
+                else
+                {
+                    model.CreateStaffMember(staffName, staffSurname, staffEmail, staffPhone, storeName);
+                }    
+            }
+            @if (Request.Form["removeCheckboxCheck"] == "on")
+            {
+                int staffID = 0;
+                if (int.TryParse(Request.Form["staffID"], out staffID))
+                {
+                    Staffs staffToRemove = model.Data.Staffs.FirstOrDefault(s => s.StaffId == staffID);
+                    if (staffToRemove != null)
+                    {
+                        // Get the staff records referencing the staff to be deleted as the manager
+                        var staffsWithManager = model.Data.Staffs.Where(s => s.ManagerId == staffID);
+
+                        // Update the manager reference for associated staff records
+                        foreach (var staff in staffsWithManager)
+                        {
+                            staff.ManagerId = null;  // Set the manager reference to null or another appropriate value
+                        }
+
+                        // Remove the staff record
+                        model.Data.Staffs.Remove(staffToRemove);
+
+                        model.Data.SaveChanges();
+                    }
+                    else
+                    {
+                        <h4>Staff member with ID @staffID does not exist.</h4>
+                    }
+                }
+                else
+                {
+                    <h4>Invalid staff ID format.</h4>
+                }
+
+            }
+        </div>
+
+        <div class="staffData">
+            <h3>Staff Data</h3>
+
+            <table class="staffTable">
+                <tr>
+                    <th>Staff ID</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Store</th>
+                </tr>
+                @{
+                    List<string[]> staffData = model.GetStaffData();
+
+                    foreach (string[] dataRow in staffData)
+                    {
+                        <tr>
+                            <td>@dataRow[0]</td>    @* Staff id *@
+                            <td>@dataRow[1]</td>    @* First name *@
+                            <td>@dataRow[2]</td>    @* Last name *@
+                            <td>@dataRow[3]</td>    @* Email *@
+                            <td>@dataRow[4]</td>    @* Phone number*@
+                            <td>@dataRow[5]</td>    @* Store *@
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="staffManagementButtons">
+            <input class="btn" type="submit" name="action" value="Add Staff">
+            <input class="btn" type="submit" name="action" value="Remove Staff">
+            <input class="btn" type="submit" name="action" value="Show Staff">
+        </div>
+        
+    }
+</form>

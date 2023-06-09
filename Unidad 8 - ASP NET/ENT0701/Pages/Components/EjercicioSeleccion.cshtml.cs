@@ -31,16 +31,16 @@ namespace ENT0701.Pages.Components
                         ).ToList();
             }
             else if (filterOption == "more1000")
-                {
-                    query = (from Brands in Data.Brands
-                            join Products in Data.Products
-                                on Brands.BrandId equals Products.BrandId
-                            join Stocks in Data.Stocks
-                                on Products.ProductId equals Stocks.ProductId
-                            where Brands.BrandName == brandName && Products.ListPrice >= 1000
-                            select new string[] { Brands.BrandName, Products.ProductName, Products.ListPrice.ToString() + '€' }
-                            ).ToList();
-                }
+            {
+                query = (from Brands in Data.Brands
+                         join Products in Data.Products
+                             on Brands.BrandId equals Products.BrandId
+                         join Stocks in Data.Stocks
+                             on Products.ProductId equals Stocks.ProductId
+                         where Brands.BrandName == brandName && Products.ListPrice >= 1000
+                         select new string[] { Brands.BrandName, Products.ProductName, Products.ModelYear.ToString(), Stocks.Quantity.ToString(), Products.ListPrice.ToString() + '€' }
+                        ).ToList();
+            }
 
             return query;
         }

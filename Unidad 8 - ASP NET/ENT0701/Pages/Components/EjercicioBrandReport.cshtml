@@ -1,4 +1,64 @@
 ﻿@page
+@using ENT0701.Models
 @model ENT0701.Pages.Components.EjercicioBrandReportModel
 @{
+    EjercicioBrandReportModel model = new EjercicioBrandReportModel(Model.Data);
+    ViewData["Title"] = "Brand report";
+
+}
+@{
+    var result = (from b in Model.Data.Brands
+                  join p in Model.Data.Products on b.BrandId equals p.BrandId
+                  join o in Model.Data.OrderItems on p.ProductId equals o.ProductId
+                  group o by b.BrandName into g
+                  select new
+                  {
+                      BrandName = g.Key,
+                      TotalQuantity = g.Sum(o => o.Quantity),
+                      TotalRevenue = g.Sum(o => o.ListPrice - (o.ListPrice * o.Discount))
+                  }).ToList();
+
+    decimal sumTotalRevenue = result.Sum(r => r.TotalRevenue);
+    int sumTotalQuantity = result.Sum(r => r.TotalQuantity);
+
+    <div class="saleData">
+        <div>
+            <h2>Total Sales</h2>
+            <p>@sumTotalQuantity units</p>
+        </div>
+        <div>
+            <h2>Total Revenue</h2>
+            <p>@sumTotalRevenue.ToString("### ### ###.00")€</p>
+        </div>
+    </div>
+    <div class="brandReports">
+        <table>
+            <tr>
+                <th colspan="2">Brand</th>
+                <th>Total Units Sold</th>
+                <th>Total Revenue</th>
+            </tr>
+            @foreach (var item in result)
+            {
+                string brandName = item.BrandName;
+                int totalQuantity = item.TotalQuantity;
+                decimal totalListPrice = item.TotalRevenue;
+
+                <tr>
+                    <td><img class="logos" src="/media/logos/@(brandName.Replace(" ", "")).png" /></td>
+                    <td>@brandName</td>
+                    <td>@totalQuantity</td>
+                    <td>@totalListPrice.ToString("### ### ###.00")€</td>
+                </tr>
+
+            }
+        </table>
+    </div>
+
+
+
+    
+
+    
+
 }
